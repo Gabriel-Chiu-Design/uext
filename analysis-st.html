@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/input.css">
+    <link rel="stylesheet" href="css/btn.css">
+    <link rel="stylesheet" href="css/overlay.css">
+    <link rel="stylesheet" href="css/patient.css">
+    <link rel="stylesheet" href="css/analysis-details.css">
+    <title>UEXT - Sleep Analysis</title>
+</head>
+<body>
+    <!-- Main Content -->
+    <header>
+        <a href="index.html"><img src="element/logo.svg" alt="UEXT Logo" class="logo"></a>
+        <div class="navbar">
+            <a class="active" href="index.html">Home</a>
+            <a href="patient-list.html">Patient</a>
+            <a href="device-list.html">Device</a>
+            <a href="account-list.html">Account</a>
+        </div>
+        <div class="other">
+            <div class="lang">
+                <img src="element/lang.svg" alt="language button" class="langBtn">
+                <div class="list">
+                    <a href="#" class="option active">
+                        <img src="element/check.svg" alt="">
+                        English (Current)</a>
+                    <a href="#" class="option">繁體中文</a>
+                </div>
+            </div>
+            <div class="notification">
+                <img src="element/notice-active.svg" alt="" class="notiBtn">
+                <div class="list">
+                    <div class="notice">
+                        <div class="title">Patient Exit Bed Notification</div>
+                        <div class="content">Chan Tai Ming (7/F, Zone A, Bed 113) just exit his bed.</div>
+                        <div class="time">Today 11:45</div>
+                        <img src="element/close.svg" alt="" class="close">
+                    </div>
+                    <div class="notice">
+                        <div class="title">Patient Exit Bed Notification</div>
+                        <div class="content">Chan Tai Ming (7/F, Zone A, Bed 113) just exit his bed.</div>
+                        <div class="time">Today 11:45</div>
+                        <img src="element/close.svg" alt="" class="close">
+                    </div>
+                    <div class="notice">
+                        <div class="title">Patient Exit Bed Notification</div>
+                        <div class="content">Chan Tai Ming (7/F, Zone A, Bed 113) just exit his bed.</div>
+                        <div class="time">Today 11:45</div>
+                        <img src="element/close.svg" alt="" class="close">
+                    </div>
+                    <div class="notice">
+                        <div class="title">Patient Exit Bed Notification</div>
+                        <div class="content">Chan Tai Ming (7/F, Zone A, Bed 113) just exit his bed.</div>
+                        <div class="time">Today 11:45</div>
+                        <img src="element/close.svg" alt="" class="close">
+                    </div>
+                    <div class="notice">
+                        <div class="title">Patient Exit Bed Notification</div>
+                        <div class="content">Chan Tai Ming (7/F, Zone A, Bed 113) just exit his bed.</div>
+                        <div class="time">Today 11:45</div>
+                        <img src="element/close.svg" alt="" class="close">
+                    </div>
+                </div>
+            </div>
+            <div class="setting">
+                <img src="element/profile-icon.png" alt="" class="settingBtn">
+                <div class="list">
+                    <div class="profile">
+                        <img src="element/profile-icon.png" alt="">
+                        <p>UEXT - Amy</p>
+                    </div>
+                    <a href="account.html" class="option acc">
+                        <img src="element/account.svg" alt="">
+                        <p>Account Settings</p>
+                    </a>
+                    <a href="#" class="option pw" id="changePassword">
+                        <img src="element/lock.svg" alt="">
+                        <p>Change Password</p>
+                    </a>
+                    <a href="#" class="option logout">
+                        <img src="element/logout.svg" alt="">
+                        <p>Logout</p>
+                    </a>
+                </div>
+            </div>
+            <img src="element/hanmburger.svg" alt="" class="hamburger">
+        </div>    
+    </header>
+    <div class="wrap">
+        <div class="pp">
+            <h1>Patient Profile</h1>
+            <div class="pfl">
+                <!-- Patient Name -->
+                <div class="input g-c-6">
+                    <label for="name" class="label-container">
+                        <p>Name</p>
+                        <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                    </label>
+                    <div class="input-gp">
+                        <input type="text" class="placeholder" id="name" name="name" placeholder="Chan Tai Ming"
+                            required>
+                        <img class="suffix" src="" alt="dropdown icon">
+                    </div>
+                    <div class="assistive-text">Oops! Something went wrong.</div>
+                </div>
+                <!-- Patient ID -->
+                <div class="input g-c-6">
+                    <label for="p-id" class="label-container">
+                        <p>Patient ID</p>
+                        <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                    </label>
+                    <div class="input-gp">
+                        <input type="text" class="placeholder" id="p-id" name="p-id" placeholder="FEX-003078" required>
+                        <img class="suffix" src="" alt="dropdown icon">
+                    </div>
+                    <div class="assistive-text">Oops! Something went wrong.</div>
+                </div>
+                <!-- Bed -->
+                <div class="input g-c-2">
+                    <label for="p-id" class="label-container">
+                        <p>Bed</p>
+                        <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                    </label>
+                    <div class="input-gp">
+                        <input type="text" class="placeholder" id="p-id" name="p-id" placeholder="1012" required>
+                        <img class="suffix" src="" alt="dropdown icon">
+                    </div>
+                    <div class="assistive-text">Oops! Something went wrong.</div>
+                </div>
+                <!-- Section -->
+                <div class="input g-c-2">
+                    <label for="section" class="label-container">
+                        <p>Section</p>
+                        <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                    </label>
+                    <div class="input-gp">
+                        <input type="text" class="placeholder" id="section" name="section" placeholder="Zone B"
+                            required>
+                        <img class="suffix" src="" alt="dropdown icon">
+                    </div>
+                    <div class="assistive-text">Oops! Something went wrong.</div>
+                </div>
+                <!-- Floor -->
+                <div class="input g-c-2">
+                    <label for="floor" class="label-container">
+                        <p>Floor</p>
+                        <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                    </label>
+                    <div class="input-gp">
+                        <input type="text" class="placeholder" id="floor" name="floor" placeholder="7/F" required>
+                        <img class="suffix" src="" alt="dropdown icon">
+                    </div>
+                    <div class="assistive-text">Oops! Something went wrong.</div>
+                </div>
+                <!-- Sex -->
+                <div class="input g-c-3">
+                    <label for="sex" class="label-container">
+                        <p>Sex</p>
+                        <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                    </label>
+                    <div class="input-gp">
+                        <input type="text" class="placeholder" id="sex" name="sex" placeholder="Male" required>
+                        <img class="suffix" src="" alt="dropdown icon">
+                    </div>
+                    <div class="assistive-text">Oops! Something went wrong.</div>
+                </div>
+                <!-- Arrival Date -->
+                <div class="input g-c-3">
+                    <label for="arrival" class="label-container">
+                        <p>Arrival</p>
+                        <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                    </label>
+                    <div class="input-gp">
+                        <input type="text" class="placeholder" id="arrival" name="arrival" placeholder="2024/07/22"
+                            required>
+                        <img class="suffix" src="" alt="dropdown icon">
+                    </div>
+                    <div class="assistive-text">Oops! Something went wrong.</div>
+                </div>
+                <!-- Height -->
+                <div class="input g-c-3">
+                    <label for="height" class="label-container">
+                        <p>Height</p>
+                        <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                    </label>
+                    <div class="input-gp">
+                        <input type="text" class="placeholder" id="height" name="height" placeholder="178cm" required>
+                        <img class="suffix" src="" alt="dropdown icon">
+                    </div>
+                    <div class="assistive-text">Oops! Something went wrong.</div>
+                </div>
+                <!-- Weight -->
+                <div class="input g-c-3">
+                    <label for="weight" class="label-container">
+                        <p>Weight</p>
+                        <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                    </label>
+                    <div class="input-gp">
+                        <input type="text" class="placeholder" id="weight" name="weight" placeholder="66kg" required>
+                        <img class="suffix" src="" alt="dropdown icon">
+                    </div>
+                    <div class="assistive-text">Oops! Something went wrong.</div>
+                </div>
+                <!-- Device ID -->
+                <div class="input g-c-3">
+                    <label for="d-id" class="label-container">
+                        <p>Device ID</p>
+                        <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                    </label>
+                    <div class="input-gp">
+                        <input type="text" class="placeholder" id="d-id" name="d-id" placeholder="RRD42687891S" required
+                            readonly>
+                        <img class="suffix" src="" alt="dropdown icon">
+                    </div>
+                    <div class="assistive-text">Oops! Something went wrong.</div>
+                </div>
+                <!-- Connection Status -->
+                <div class="input g-c-3 suffix">
+                    <label for="connection" class="label-container">
+                        <p>Connection Status</p>
+                        <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                    </label>
+                    <div class="input-gp">
+                        <input type="text" class="placeholder" id="connection" name="connection" value="Connected"
+                            readonly>
+                        <img class="suffix active" src="" alt="dropdown icon">
+                    </div>
+                    <div class="assistive-text active">click to reconnect</div>
+                </div>
+            </div>
+            <div class="btn-gp">
+                <div class="btn text-only inactive">
+                    <img src="" alt="" class="prefix">
+                    <p class="btn-text">Save</p>
+                </div>
+                <div class="btn text-only outline" id="discharge">
+                    <img src="" alt="" class="prefix">
+                    <p class="btn-text">Discharge</p>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="tab">
+                <h1 class="opt active">Sleep Analysis Details</h1>
+                <a class="btn frameless" href="patient-analysis.html">
+                    <img src="" alt="" class="prefix">
+                    <p class="btn-text">Back</p>
+                </a>
+            </div>
+            <div class="analysis">
+                <div class="ct st">
+                    <div class="diagram">
+                        <div class="title">2024/7/12 - 2024/7/18</div>
+                        <div class="bed-status">
+                            <div class="status">
+                                <img src="element/unstable-sleep.svg" alt="">
+                                <p>Unstable</p>
+                            </div>
+                            <div class="status">
+                                <img src="element/light-sleep.svg" alt="">
+                                <p>Light Sleep</p>
+                            </div>
+                            <div class="status">
+                                <img src="element/deep-sleep.svg" alt="">
+                                <p>Deep Sleep</p>
+                            </div>
+                        </div>
+                        <div class="sleep-track">
+                            <div class="bar">
+                                <img src="element/day1.svg" alt="">
+                                <img src="element/day1.svg" alt="">
+                                <img src="element/day1.svg" alt="">
+                                <img src="element/day1.svg" alt="">
+                                <img src="element/day1.svg" alt="">
+                                <img src="element/day1.svg" alt="">
+                                <img src="element/day1.svg" alt="">
+                            </div>
+                            <div class="day">
+                                <p>7/12</p>
+                                <p>7/13</p>
+                                <p>7/14</p>
+                                <p>7/15</p>
+                                <p>7/16</p>
+                                <p>7/17</p>
+                                <p>7/18</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="analysis-box">
+                        <div class="data-list">
+                            <div class="data">
+                                <img src="element/unstable-sleep.svg" alt="">
+                                <div class="name">Unstable</div>
+                                <div class="stat">1.2</div>
+                            </div>
+                            <div class="data">
+                                <img src="element/light-sleep.svg" alt="">
+                                <div class="name">Light Sleep</div>
+                                <div class="stat">3.4</div>
+                            </div>
+                            <div class="data">
+                                <img src="element/deep-sleep.svg" alt="">
+                                <div class="name">Deep Sleep</div>
+                                <div class="stat">5.3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ct st">
+                    <div class="diagram">
+                        <div class="title">2024/7/12 - 2024/7/18</div>
+                        <div class="bed-status">
+                            <div class="status">
+                                <img src="element/unstable-sleep.svg" alt="">
+                                <p>Unstable</p>
+                            </div>
+                            <div class="status">
+                                <img src="element/light-sleep.svg" alt="">
+                                <p>Light Sleep</p>
+                            </div>
+                            <div class="status">
+                                <img src="element/deep-sleep.svg" alt="">
+                                <p>Deep Sleep</p>
+                            </div>
+                        </div>
+                        <div class="sleep-track">
+                            <div class="bar">
+                                <img src="element/day1.svg" alt="">
+                                <img src="element/day1.svg" alt="">
+                                <img src="element/day1.svg" alt="">
+                                <img src="element/day1.svg" alt="">
+                                <img src="element/day1.svg" alt="">
+                                <img src="element/day1.svg" alt="">
+                                <img src="element/day1.svg" alt="">
+                            </div>
+                            <div class="day">
+                                <p>7/12</p>
+                                <p>7/13</p>
+                                <p>7/14</p>
+                                <p>7/15</p>
+                                <p>7/16</p>
+                                <p>7/17</p>
+                                <p>7/18</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="analysis-box">
+                        <div class="data-list">
+                            <div class="data">
+                                <img src="element/unstable-sleep.svg" alt="">
+                                <div class="name">Unstable</div>
+                                <div class="stat">1.2</div>
+                            </div>
+                            <div class="data">
+                                <img src="element/light-sleep.svg" alt="">
+                                <div class="name">Light Sleep</div>
+                                <div class="stat">3.4</div>
+                            </div>
+                            <div class="data">
+                                <img src="element/deep-sleep.svg" alt="">
+                                <div class="name">Deep Sleep</div>
+                                <div class="stat">5.3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ct st">
+                    <div class="diagram">
+                        <div class="title">2024/7/12 - 2024/7/18</div>
+                        <div class="bed-status">
+                            <div class="status">
+                                <img src="element/unstable-sleep.svg" alt="">
+                                <p>Unstable</p>
+                            </div>
+                            <div class="status">
+                                <img src="element/light-sleep.svg" alt="">
+                                <p>Light Sleep</p>
+                            </div>
+                            <div class="status">
+                                <img src="element/deep-sleep.svg" alt="">
+                                <p>Deep Sleep</p>
+                            </div>
+                        </div>
+                        <div class="sleep-track">
+                            <div class="bar">
+                                <img src="element/day1.svg" alt="">
+                                <img src="element/day1.svg" alt="">
+                                <img src="element/day1.svg" alt="">
+                                <img src="element/day1.svg" alt="">
+                                <img src="element/day1.svg" alt="">
+                                <img src="element/day1.svg" alt="">
+                                <img src="element/day1.svg" alt="">
+                            </div>
+                            <div class="day">
+                                <p>7/12</p>
+                                <p>7/13</p>
+                                <p>7/14</p>
+                                <p>7/15</p>
+                                <p>7/16</p>
+                                <p>7/17</p>
+                                <p>7/18</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="analysis-box">
+                        <div class="data-list">
+                            <div class="data">
+                                <img src="element/unstable-sleep.svg" alt="">
+                                <div class="name">Unstable</div>
+                                <div class="stat">1.2</div>
+                            </div>
+                            <div class="data">
+                                <img src="element/light-sleep.svg" alt="">
+                                <div class="name">Light Sleep</div>
+                                <div class="stat">3.4</div>
+                            </div>
+                            <div class="data">
+                                <img src="element/deep-sleep.svg" alt="">
+                                <div class="name">Deep Sleep</div>
+                                <div class="stat">5.3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ct st">
+                    <div class="diagram">
+                        <div class="title">2024/7/12 - 2024/7/18</div>
+                        <div class="bed-status">
+                            <div class="status">
+                                <img src="element/unstable-sleep.svg" alt="">
+                                <p>Unstable</p>
+                            </div>
+                            <div class="status">
+                                <img src="element/light-sleep.svg" alt="">
+                                <p>Light Sleep</p>
+                            </div>
+                            <div class="status">
+                                <img src="element/deep-sleep.svg" alt="">
+                                <p>Deep Sleep</p>
+                            </div>
+                        </div>
+                        <div class="sleep-track">
+                            <div class="bar">
+                                <img src="element/day1.svg" alt="">
+                                <img src="element/day1.svg" alt="">
+                                <img src="element/day1.svg" alt="">
+                                <img src="element/day1.svg" alt="">
+                                <img src="element/day1.svg" alt="">
+                                <img src="element/day1.svg" alt="">
+                                <img src="element/day1.svg" alt="">
+                            </div>
+                            <div class="day">
+                                <p>7/12</p>
+                                <p>7/13</p>
+                                <p>7/14</p>
+                                <p>7/15</p>
+                                <p>7/16</p>
+                                <p>7/17</p>
+                                <p>7/18</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="analysis-box">
+                        <div class="data-list">
+                            <div class="data">
+                                <img src="element/unstable-sleep.svg" alt="">
+                                <div class="name">Unstable</div>
+                                <div class="stat">1.2</div>
+                            </div>
+                            <div class="data">
+                                <img src="element/light-sleep.svg" alt="">
+                                <div class="name">Light Sleep</div>
+                                <div class="stat">3.4</div>
+                            </div>
+                            <div class="data">
+                                <img src="element/deep-sleep.svg" alt="">
+                                <div class="name">Deep Sleep</div>
+                                <div class="stat">5.3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ct st">
+                    <div class="diagram">
+                        <div class="title">2024/7/12 - 2024/7/18</div>
+                        <div class="bed-status">
+                            <div class="status">
+                                <img src="element/unstable-sleep.svg" alt="">
+                                <p>Unstable</p>
+                            </div>
+                            <div class="status">
+                                <img src="element/light-sleep.svg" alt="">
+                                <p>Light Sleep</p>
+                            </div>
+                            <div class="status">
+                                <img src="element/deep-sleep.svg" alt="">
+                                <p>Deep Sleep</p>
+                            </div>
+                        </div>
+                        <div class="sleep-track">
+                            <div class="bar">
+                                <img src="element/day1.svg" alt="">
+                                <img src="element/day1.svg" alt="">
+                                <img src="element/day1.svg" alt="">
+                                <img src="element/day1.svg" alt="">
+                                <img src="element/day1.svg" alt="">
+                                <img src="element/day1.svg" alt="">
+                                <img src="element/day1.svg" alt="">
+                            </div>
+                            <div class="day">
+                                <p>7/12</p>
+                                <p>7/13</p>
+                                <p>7/14</p>
+                                <p>7/15</p>
+                                <p>7/16</p>
+                                <p>7/17</p>
+                                <p>7/18</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="analysis-box">
+                        <div class="data-list">
+                            <div class="data">
+                                <img src="element/unstable-sleep.svg" alt="">
+                                <div class="name">Unstable</div>
+                                <div class="stat">1.2</div>
+                            </div>
+                            <div class="data">
+                                <img src="element/light-sleep.svg" alt="">
+                                <div class="name">Light Sleep</div>
+                                <div class="stat">3.4</div>
+                            </div>
+                            <div class="data">
+                                <img src="element/deep-sleep.svg" alt="">
+                                <div class="name">Deep Sleep</div>
+                                <div class="stat">5.3</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <img src="element/uneo-logo.png" alt="">
+        <div class="cr">Copyright ©2024 Uneo Inc. All rights reserved.</div>
+        <div class="date">2024-09-18</div>
+        <div class="time">08:08</div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="overlay discharge">
+        <div class="warn">
+            <img class="icon" src="element/alert-box.svg" alt="alert box">
+            <h1 class="title">Confirm to discharge the patient?</h1>
+            <p class="desc">you will need to reconnect to a bed to obtain live data.</p>
+            <div class="btn-gp">
+                <a class="btn text-only pri" href="account-list.html">
+                    <img src="" alt="" class="prefix">
+                    <p class="btn-text pri-text">Discharge</p>
+                </a>
+                <a class="btn text-only outline sec" href="account-list.html">
+                    <img src="" alt="" class="prefix">
+                    <p class="btn-text sec-text">Cancel</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="overlay logout">
+        <div class="warn">
+            <img class="icon" src="element/logout-active.svg" alt="logout icon">
+            <h1 class="title">Logout?</h1>
+            <p class="desc">Confirm to logout.</p>
+            <div class="btn-gp">
+                <a class="btn text-only pri" href="login.html">
+                    <img src="" alt="" class="prefix">
+                    <p class="btn-text pri-text">Confirm</p>
+                </a>
+                <a class="btn text-only outline sec" href="#">
+                    <img src="" alt="" class="prefix">
+                    <p class="btn-text sec-text">Cancel</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="overlay newpwConfirm">
+        <div class="warn">
+            <img class="icon" src="element/check-active.svg" alt="tick icon">
+            <h1 class="title">New password has been updated</h1>
+            <p class="desc">remember to use the new password when you login next time.</p>
+            <div class="btn-gp">
+                <a class="btn text-only pri" href="#">
+                    <img src="" alt="" class="prefix">
+                    <p class="btn-text pri-text">Okay</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="changePassword">
+        <div class="window">
+            <div class="title">New Password</div>
+            <div class="subtitle"></div>
+            <img src="element/close.svg" alt="" class="close">
+            <form action="">
+                <div class="grid">
+                    <!-- Current Password -->
+                    <div class="input g-c-6 suffix">
+                        <label for="cpw" class="label-container">
+                            <p>Enter your current password</p>
+                            <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                        </label>
+                        <div class="input-gp">
+                            <input type="password" class="placeholder" name="cpw" placeholder="Enter here"
+                                required>
+                            <img class="suffix hide" src="element/eye-off.svg" alt="eye icon">
+                        </div>
+                        <div class="assistive-text active">Must include one upper and one lower case alphabet.</div>
+                    </div>
+                    <!-- New Password -->
+                    <div class="input g-c-6 suffix">
+                        <label for="npw" class="label-container">
+                            <p>Enter your new password</p>
+                            <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                        </label>
+                        <div class="input-gp">
+                            <input type="password" class="placeholder" name="npw" placeholder="Enter here"
+                                required>
+                            <img class="suffix hide" src="element/eye-off.svg" alt="eye icon">
+                        </div>
+                        <div class="assistive-text active">Must include one upper and one lower case alphabet.</div>
+                    </div>
+                    <!-- Confirm Password -->
+                    <div class="input g-c-6 suffix">
+                        <label for="cnpw" class="label-container">
+                            <p>Confirm your new password</p>
+                            <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                        </label>
+                        <div class="input-gp">
+                            <input type="password" class="placeholder" name="cnpw" placeholder="Enter here" required>
+                            <img class="suffix hide" src="element/eye-off.svg" alt="eye icon">
+                        </div>
+                        <div class="assistive-text active">Must include one upper and one lower case alphabet.</div>
+                    </div>
+                </div>
+                <div class="btn-gp">
+                    <div class="btn text-only pri">
+                        <img src="" alt="" class="prefix">
+                        <p class="btn-text pri-text">Confirm</p>
+                    </div>
+                    <div class="btn text-only outline sec">
+                        <img src="" alt="" class="prefix">
+                        <p class="btn-text sec-text">Back</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Side Menu -->
+    <div class="sideMenu">
+        <img src="element/uext.svg" alt="" class="logo">
+        <div class="option-list">
+            <div class="list">
+                <a href="index.html" class="option">Home</a>
+                <a href="patient-list.html" class="option">Patient</a>
+                <a href="device-list.html" class="option">Device</a>
+                <a href="account-list.html" class="option">Account</a>
+            </div>
+            <div class="list">
+                <a href="account.html" class="option">Profile Setting</a>
+                <a class="option" id="changePassword-3">Change Password</a>
+            </div>
+        </div>
+        <div class="btn frameless" id="logout-btn">
+            <img src="" alt="" class="prefix">
+            <p class="btn-text">Logout</p>
+        </div>
+    </div>
+    <div class="sideMenu-overlay"></div>
+
+    <!-- Javascripts -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="js/general.js"></script>
+    <script src="js/patient.js"></script>
+    <script src="js/overlay.js"></script>
+</body>
+</html>

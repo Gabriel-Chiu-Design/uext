@@ -1,0 +1,12 @@
+.title{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    color: var(--850, #262626);
+    font-weight: 500;
+}
+
+.title img{
+    width: 48px;
+    height: 48px;
+}

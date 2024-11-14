@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/panel-list.css">
+    <link rel="stylesheet" href="css/input.css">
+    <link rel="stylesheet" href="css/btn.css">
+    <link rel="stylesheet" href="css/overlay.css">
+    <title>UEXT - Patient List</title>
+</head>
+<body>
+    <!-- Main Content -->
+    <header>
+        <a href="index.html"><img src="element/logo.svg" alt="UEXT Logo" class="logo"></a>
+        <div class="navbar">
+            <a class="active" href="index.html">Home</a>
+            <a href="patient-list.html">Patient</a>
+            <a href="device-list.html">Device</a>
+            <a href="account-list.html">Account</a>
+        </div>
+        <div class="other">
+            <div class="lang">
+                <img src="element/lang.svg" alt="language button" class="langBtn">
+                <div class="list">
+                    <a href="#" class="option active">
+                        <img src="element/check.svg" alt="">
+                        English (Current)</a>
+                    <a href="#" class="option">繁體中文</a>
+                </div>
+            </div>
+            <div class="notification">
+                <img src="element/notice-active.svg" alt="" class="notiBtn">
+                <div class="list">
+                    <div class="notice">
+                        <div class="title">Patient Exit Bed Notification</div>
+                        <div class="content">Chan Tai Ming (7/F, Zone A, Bed 113) just exit his bed.</div>
+                        <div class="time">Today 11:45</div>
+                        <img src="element/close.svg" alt="" class="close">
+                    </div>
+                    <div class="notice">
+                        <div class="title">Patient Exit Bed Notification</div>
+                        <div class="content">Chan Tai Ming (7/F, Zone A, Bed 113) just exit his bed.</div>
+                        <div class="time">Today 11:45</div>
+                        <img src="element/close.svg" alt="" class="close">
+                    </div>
+                    <div class="notice">
+                        <div class="title">Patient Exit Bed Notification</div>
+                        <div class="content">Chan Tai Ming (7/F, Zone A, Bed 113) just exit his bed.</div>
+                        <div class="time">Today 11:45</div>
+                        <img src="element/close.svg" alt="" class="close">
+                    </div>
+                    <div class="notice">
+                        <div class="title">Patient Exit Bed Notification</div>
+                        <div class="content">Chan Tai Ming (7/F, Zone A, Bed 113) just exit his bed.</div>
+                        <div class="time">Today 11:45</div>
+                        <img src="element/close.svg" alt="" class="close">
+                    </div>
+                    <div class="notice">
+                        <div class="title">Patient Exit Bed Notification</div>
+                        <div class="content">Chan Tai Ming (7/F, Zone A, Bed 113) just exit his bed.</div>
+                        <div class="time">Today 11:45</div>
+                        <img src="element/close.svg" alt="" class="close">
+                    </div>
+                </div>
+            </div>
+            <div class="setting">
+                <img src="element/profile-icon.png" alt="" class="settingBtn">
+                <div class="list">
+                    <div class="profile">
+                        <img src="element/profile-icon.png" alt="">
+                        <p>UEXT - Amy</p>
+                    </div>
+                    <a href="account.html" class="option acc">
+                        <img src="element/account.svg" alt="">
+                        <p>Account Settings</p>
+                    </a>
+                    <a href="#" class="option pw" id="changePassword">
+                        <img src="element/lock.svg" alt="">
+                        <p>Change Password</p>
+                    </a>
+                    <a href="#" class="option logout">
+                        <img src="element/logout.svg" alt="">
+                        <p>Logout</p>
+                    </a>
+                </div>
+            </div>
+            <img src="element/hanmburger.svg" alt="" class="hamburger">
+        </div>    
+    </header>
+    <div class="wrap">
+        <div class="alerts">
+            <div class="box">
+                <h1>Alerts</h1>
+                <img id="expand" src="element/double-left.svg" alt="double chervon left arrow">
+            </div>
+            <div class="alert-list">
+                <div class="container new">
+                    <div class="title">
+                        <img src="element/alert.svg" alt="red rectangular alert icon">
+                        <h2>Exit Bed Alert</h2>
+                    </div>
+                    <div class="info">
+                        <div class="item">
+                            <div class="caption">Section</div>
+                            <p>9F-01</p>
+                        </div>
+                        <div class="item">
+                            <div class="caption">Bed</div>
+                            <p>1024</p>
+                        </div>
+                        <div class="item">
+                            <div class="caption">Name</div>
+                            <p>Chan Tai Ming</p>
+                        </div>
+                        <div class="time">08:41</div>
+                    </div>
+                </div>
+                <div class="container new">
+                    <div class="title">
+                        <img src="element/alert.svg" alt="red rectangular alert icon">
+                        <h2>Exit Bed Alert</h2>
+                    </div>
+                    <div class="info">
+                        <div class="item">
+                            <div class="caption">Section</div>
+                            <p>9F-01</p>
+                        </div>
+                        <div class="item">
+                            <div class="caption">Bed</div>
+                            <p>1024</p>
+                        </div>
+                        <div class="item">
+                            <div class="caption">Name</div>
+                            <p>Chan Tai Ming</p>
+                        </div>
+                        <div class="time">08:41</div>
+                    </div>
+                </div>
+                <div class="container new">
+                    <div class="title">
+                        <img src="element/alert.svg" alt="red rectangular alert icon">
+                        <h2>Exit Bed Alert</h2>
+                    </div>
+                    <div class="info">
+                        <div class="item">
+                            <div class="caption">Section</div>
+                            <p>9F-01</p>
+                        </div>
+                        <div class="item">
+                            <div class="caption">Bed</div>
+                            <p>1024</p>
+                        </div>
+                        <div class="item">
+                            <div class="caption">Name</div>
+                            <p>Chan Tai Ming</p>
+                        </div>
+                        <div class="time">08:41</div>
+                    </div>
+                </div>
+                <div class="container in-progress">
+                    <div class="title">
+                        <img src="element/alert-progress.svg" alt="red rectangular alert icon">
+                        <h2>Exit Bed Alert</h2>
+                    </div>
+                    <div class="info">
+                        <div class="item">
+                            <div class="caption">Section</div>
+                            <p>9F-01</p>
+                        </div>
+                        <div class="item">
+                            <div class="caption">Bed</div>
+                            <p>1024</p>
+                        </div>
+                        <div class="item">
+                            <div class="caption">Name</div>
+                            <p>Chan Tai Ming</p>
+                        </div>
+                        <div class="time">08:41</div>
+                    </div>
+                </div>
+                <div class="container in-progress">
+                    <div class="title">
+                        <img src="element/alert-progress.svg" alt="red rectangular alert icon">
+                        <h2>Exit Bed Alert</h2>
+                    </div>
+                    <div class="info">
+                        <div class="item">
+                            <div class="caption">Section</div>
+                            <p>9F-01</p>
+                        </div>
+                        <div class="item">
+                            <div class="caption">Bed</div>
+                            <p>1024</p>
+                        </div>
+                        <div class="item">
+                            <div class="caption">Name</div>
+                            <p>Chan Tai Ming</p>
+                        </div>
+                        <div class="time">08:41</div>
+                    </div>
+                </div>
+                <div class="container in-progress">
+                    <div class="title">
+                        <img src="element/alert-progress.svg" alt="red rectangular alert icon">
+                        <h2>Exit Bed Alert</h2>
+                    </div>
+                    <div class="info">
+                        <div class="item">
+                            <div class="caption">Section</div>
+                            <p>9F-01</p>
+                        </div>
+                        <div class="item">
+                            <div class="caption">Bed</div>
+                            <p>1024</p>
+                        </div>
+                        <div class="item">
+                            <div class="caption">Name</div>
+                            <p>Chan Tai Ming</p>
+                        </div>
+                        <div class="time">08:41</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="box">
+                <h1>Patient List</h1>
+            </div>
+            <div class="container">
+                <div class="top-bar">
+                    <div class="input dropdown floor suffix">
+                        <label for="floor" class="label-container">
+                            <p>Floor</p>
+                            <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                        </label>
+                        <div class="input-gp">
+                            <input type="text" class="placeholder" id="name" name="name" placeholder="7F" readonly>
+                            <img class="suffix active" src="" alt="dropdown icon">
+                        </div>
+                        <div class="assistive-text">this is a line of assistive text</div>
+                        <div class="list">
+                            <div class="item opt1">1F</div>
+                            <div class="item opt2">2F</div>
+                            <div class="item opt3">3F</div>
+                            <div class="item opt4">4F</div>
+                            <div class="item opt5">5F</div>
+                            <div class="item opt6">6F</div>
+                            <div class="item opt7">7F</div>
+                        </div>
+                    </div>
+                    <div class="input dropdown section suffix">
+                        <label for="section" class="label-container">
+                            <p>Section</p>
+                            <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                        </label>
+                        <div class="input-gp">
+                            <input type="text" class="placeholder" id="name" name="name" placeholder="Zone A" readonly>
+                            <img class="suffix active" src="" alt="dropdown icon">
+                        </div>
+                        <div class="assistive-text">this is a line of assistive text</div>
+                        <div class="list">
+                            <div class="item opt1">Zone A</div>
+                            <div class="item opt2">Zone B</div>
+                            <div class="item opt3">Zone C</div>
+                            <div class="item opt4">Zone D</div>
+                        </div>
+                    </div>
+                    <div class="input search">
+                        <label for="search" class="label-container">
+                            <p>Search</p>
+                            <img src="element/information-outline.svg" alt="gray outline information icon">
+                        </label>
+                        <input type="search" name="search" class="placeholder" placeholder="Search" style="font-family: Avenir Next;">
+                        <div class="assistive-text">this is a line of assistive text</div>
+                    </div>
+                    <div class="btn" id="addPatient">
+                        <img src="" alt="" class="prefix">
+                        <p class="btn-text">New Patient</p>
+                    </div>
+                </div>
+                <div class="pl">
+                    <div class="head">
+                        <img class="cb" src="element/checkbox-blank-outline.svg" alt="outline blank checkbox">
+                        <img class="cb2" src="element/checkbox-filled-outline.svg" alt="outline filled checkbox">
+                        <h3 class="fg2">Patient Name</h3>
+                        <h3 class="fg1">Status</h3>
+                        <h3 class="fg2">Patient ID</h3>
+                        <h3 class="fg1">Sex</h3>
+                        <h3 class="fg1">Floor</h3>
+                        <h3 class="fg1">Section</h3>
+                        <h3 class="fg1">Bed</h3>
+                        <h3 class="fg2">Device ID</h3>
+                        <div class="connection fg2">
+                            <img src="" alt="">
+                            <h3>Connection</h3>
+                        </div>
+                    </div>
+                    <div class="item-list">
+                        <a href="patient-monitor.html" class="item">
+                            <img class="cb" src="element/checkbox-blank-outline.svg" alt="outline blank checkbox">
+                            <h3 class="fg2">Chan Tai Ming</h3>
+                            <h3 class="fg1">In-bed</h3>
+                            <h3 class="fg2">FEX-003078</h3>
+                            <h3 class="fg1">Male</h3>
+                            <h3 class="fg1">Zone B</h3>
+                            <h3 class="fg1">7/F</h3>
+                            <h3 class="fg1">113</h3>
+                            <h3 class="fg2">RRD42687891S</h3>
+                            <div class="connection connected fg2">
+                                <img src="" alt="">
+                                <h3>Connected</h3>
+                            </div>
+                        </a>
+                        <a href="patient-monitor.html" class="item">
+                            <img class="cb" src="element/checkbox-blank-outline.svg" alt="outline blank checkbox">
+                            <h3 class="fg2">Chan Tai Ming</h3>
+                            <h3 class="fg1">In-bed</h3>
+                            <h3 class="fg2">FEX-003078</h3>
+                            <h3 class="fg1">Male</h3>
+                            <h3 class="fg1">Zone B</h3>
+                            <h3 class="fg1">7/F</h3>
+                            <h3 class="fg1">113</h3>
+                            <h3 class="fg2">RRD42687891S</h3>
+                            <div class="connection connected fg2">
+                                <img src="" alt="">
+                                <h3>Connected</h3>
+                            </div>
+                        </a>
+                        <a href="patient-monitor.html" class="item">
+                            <img class="cb" src="element/checkbox-blank-outline.svg" alt="outline blank checkbox">
+                            <h3 class="fg2">Chan Tai Ming</h3>
+                            <h3 class="fg1">In-bed</h3>
+                            <h3 class="fg2">FEX-003078</h3>
+                            <h3 class="fg1">Male</h3>
+                            <h3 class="fg1">Zone B</h3>
+                            <h3 class="fg1">7/F</h3>
+                            <h3 class="fg1">113</h3>
+                            <h3 class="fg2">RRD42687891S</h3>
+                            <div class="connection connected fg2">
+                                <img src="" alt="">
+                                <h3>Connected</h3>
+                            </div>
+                        </a>
+                        <a href="patient-monitor.html" class="item">
+                            <img class="cb" src="element/checkbox-blank-outline.svg" alt="outline blank checkbox">
+                            <h3 class="fg2">Chan Tai Ming</h3>
+                            <h3 class="fg1">In-bed</h3>
+                            <h3 class="fg2">FEX-003078</h3>
+                            <h3 class="fg1">Male</h3>
+                            <h3 class="fg1">Zone B</h3>
+                            <h3 class="fg1">7/F</h3>
+                            <h3 class="fg1">113</h3>
+                            <h3 class="fg2">RRD42687891S</h3>
+                            <div class="connection connected fg2">
+                                <img src="" alt="">
+                                <h3>Connected</h3>
+                            </div>
+                        </a>
+                        <a href="patient-monitor.html" class="item">
+                            <img class="cb" src="element/checkbox-blank-outline.svg" alt="outline blank checkbox">
+                            <h3 class="fg2">Chan Tai Ming</h3>
+                            <h3 class="fg1">In-bed</h3>
+                            <h3 class="fg2">FEX-003078</h3>
+                            <h3 class="fg1">Male</h3>
+                            <h3 class="fg1">Zone B</h3>
+                            <h3 class="fg1">7/F</h3>
+                            <h3 class="fg1">113</h3>
+                            <h3 class="fg2">RRD42687891S</h3>
+                            <div class="connection connected fg2">
+                                <img src="" alt="">
+                                <h3>Connected</h3>
+                            </div>
+                        </a>
+                        <a href="patient-monitor.html" class="item">
+                            <img class="cb" src="element/checkbox-blank-outline.svg" alt="outline blank checkbox">
+                            <h3 class="fg2">Chan Tai Ming</h3>
+                            <h3 class="fg1">In-bed</h3>
+                            <h3 class="fg2">FEX-003078</h3>
+                            <h3 class="fg1">Male</h3>
+                            <h3 class="fg1">Zone B</h3>
+                            <h3 class="fg1">7/F</h3>
+                            <h3 class="fg1">113</h3>
+                            <h3 class="fg2">RRD42687891S</h3>
+                            <div class="connection disconnected fg2">
+                                <img src="" alt="">
+                                <h3>Disconnected</h3>
+                            </div>
+                        </a>
+                        <a href="patient-monitor.html" class="item">
+                            <img class="cb" src="element/checkbox-blank-outline.svg" alt="outline blank checkbox">
+                            <h3 class="fg2">Chan Tai Ming</h3>
+                            <h3 class="fg1">In-bed</h3>
+                            <h3 class="fg2">FEX-003078</h3>
+                            <h3 class="fg1">Male</h3>
+                            <h3 class="fg1">Zone B</h3>
+                            <h3 class="fg1">7/F</h3>
+                            <h3 class="fg1">113</h3>
+                            <h3 class="fg2">RRD42687891S</h3>
+                            <div class="connection connected fg2">
+                                <img src="" alt="">
+                                <h3>Connected</h3>
+                            </div>
+                        </a>
+                        <a href="patient-monitor.html" class="item">
+                            <img class="cb" src="element/checkbox-blank-outline.svg" alt="outline blank checkbox">
+                            <h3 class="fg2">Chan Tai Ming</h3>
+                            <h3 class="fg1">In-bed</h3>
+                            <h3 class="fg2">FEX-003078</h3>
+                            <h3 class="fg1">Male</h3>
+                            <h3 class="fg1">Zone B</h3>
+                            <h3 class="fg1">7/F</h3>
+                            <h3 class="fg1">113</h3>
+                            <h3 class="fg2">RRD42687891S</h3>
+                            <div class="connection disconnected fg2">
+                                <img src="" alt="">
+                                <h3>Disconnected</h3>
+                            </div>
+                        </a>
+                        <a href="patient-monitor.html" class="item">
+                            <img class="cb" src="element/checkbox-blank-outline.svg" alt="outline blank checkbox">
+                            <h3 class="fg2">Chan Tai Ming</h3>
+                            <h3 class="fg1">In-bed</h3>
+                            <h3 class="fg2">FEX-003078</h3>
+                            <h3 class="fg1">Male</h3>
+                            <h3 class="fg1">Zone B</h3>
+                            <h3 class="fg1">7/F</h3>
+                            <h3 class="fg1">113</h3>
+                            <h3 class="fg2">RRD42687891S</h3>
+                            <div class="connection connected fg2">
+                                <img src="" alt="">
+                                <h3>Connected</h3>
+                            </div>
+                        </a>
+                        <a href="patient-monitor.html" class="item">
+                            <img class="cb" src="element/checkbox-blank-outline.svg" alt="outline blank checkbox">
+                            <h3 class="fg2">Chan Tai Ming</h3>
+                            <h3 class="fg1">In-bed</h3>
+                            <h3 class="fg2">FEX-003078</h3>
+                            <h3 class="fg1">Male</h3>
+                            <h3 class="fg1">Zone B</h3>
+                            <h3 class="fg1">7/F</h3>
+                            <h3 class="fg1">113</h3>
+                            <h3 class="fg2">RRD42687891S</h3>
+                            <div class="connection connected fg2">
+                                <img src="" alt="">
+                                <h3>Connected</h3>
+                            </div>
+                        </a>
+                        <a href="patient-monitor.html" class="item">
+                            <img class="cb" src="element/checkbox-blank-outline.svg" alt="outline blank checkbox">
+                            <h3 class="fg2">Chan Tai Ming</h3>
+                            <h3 class="fg1">In-bed</h3>
+                            <h3 class="fg2">FEX-003078</h3>
+                            <h3 class="fg1">Male</h3>
+                            <h3 class="fg1">Zone B</h3>
+                            <h3 class="fg1">7/F</h3>
+                            <h3 class="fg1">113</h3>
+                            <h3 class="fg2">RRD42687891S</h3>
+                            <div class="connection connected fg2">
+                                <img src="" alt="">
+                                <h3>Connected</h3>
+                            </div>
+                        </a>
+                        <a href="patient-monitor.html" class="item">
+                            <img class="cb" src="element/checkbox-blank-outline.svg" alt="outline blank checkbox">
+                            <h3 class="fg2">Chan Tai Ming</h3>
+                            <h3 class="fg1">In-bed</h3>
+                            <h3 class="fg2">FEX-003078</h3>
+                            <h3 class="fg1">Male</h3>
+                            <h3 class="fg1">Zone B</h3>
+                            <h3 class="fg1">7/F</h3>
+                            <h3 class="fg1">113</h3>
+                            <h3 class="fg2">RRD42687891S</h3>
+                            <div class="connection connected fg2">
+                                <img src="" alt="">
+                                <h3>Connected</h3>
+                            </div>
+                        </a>
+                        <a href="patient-monitor.html" class="item">
+                            <img class="cb" src="element/checkbox-blank-outline.svg" alt="outline blank checkbox">
+                            <h3 class="fg2">Chan Tai Ming</h3>
+                            <h3 class="fg1">In-bed</h3>
+                            <h3 class="fg2">FEX-003078</h3>
+                            <h3 class="fg1">Male</h3>
+                            <h3 class="fg1">Zone B</h3>
+                            <h3 class="fg1">7/F</h3>
+                            <h3 class="fg1">113</h3>
+                            <h3 class="fg2">RRD42687891S</h3>
+                            <div class="connection connected fg2">
+                                <img src="" alt="">
+                                <h3>Connected</h3>
+                            </div>
+                        </a>
+                        <a href="patient-monitor.html" class="item">
+                            <img class="cb" src="element/checkbox-blank-outline.svg" alt="outline blank checkbox">
+                            <h3 class="fg2">Chan Tai Ming</h3>
+                            <h3 class="fg1">In-bed</h3>
+                            <h3 class="fg2">FEX-003078</h3>
+                            <h3 class="fg1">Male</h3>
+                            <h3 class="fg1">Zone B</h3>
+                            <h3 class="fg1">7/F</h3>
+                            <h3 class="fg1">113</h3>
+                            <h3 class="fg2">RRD42687891S</h3>
+                            <div class="connection connected fg2">
+                                <img src="" alt="">
+                                <h3>Connected</h3>
+                            </div>
+                        </a>
+                        <a href="patient-monitor.html" class="item">
+                            <img class="cb" src="element/checkbox-blank-outline.svg" alt="outline blank checkbox">
+                            <h3 class="fg2">Chan Tai Ming</h3>
+                            <h3 class="fg1">In-bed</h3>
+                            <h3 class="fg2">FEX-003078</h3>
+                            <h3 class="fg1">Male</h3>
+                            <h3 class="fg1">Zone B</h3>
+                            <h3 class="fg1">7/F</h3>
+                            <h3 class="fg1">113</h3>
+                            <h3 class="fg2">RRD42687891S</h3>
+                            <div class="connection connected fg2">
+                                <img src="" alt="">
+                                <h3>Connected</h3>
+                            </div>
+                        </a>
+                        <a href="patient-monitor.html" class="item">
+                            <img class="cb" src="element/checkbox-blank-outline.svg" alt="outline blank checkbox">
+                            <h3 class="fg2">Chan Tai Ming</h3>
+                            <h3 class="fg1">In-bed</h3>
+                            <h3 class="fg2">FEX-003078</h3>
+                            <h3 class="fg1">Male</h3>
+                            <h3 class="fg1">Zone B</h3>
+                            <h3 class="fg1">7/F</h3>
+                            <h3 class="fg1">113</h3>
+                            <h3 class="fg2">RRD42687891S</h3>
+                            <div class="connection connected fg2">
+                                <img src="" alt="">
+                                <h3>Connected</h3>
+                            </div>
+                        </a>
+                        <a href="patient-monitor.html" class="item">
+                            <img class="cb" src="element/checkbox-blank-outline.svg" alt="outline blank checkbox">
+                            <h3 class="fg2">Chan Tai Ming</h3>
+                            <h3 class="fg1">In-bed</h3>
+                            <h3 class="fg2">FEX-003078</h3>
+                            <h3 class="fg1">Male</h3>
+                            <h3 class="fg1">Zone B</h3>
+                            <h3 class="fg1">7/F</h3>
+                            <h3 class="fg1">113</h3>
+                            <h3 class="fg2">RRD42687891S</h3>
+                            <div class="connection connected fg2">
+                                <img src="" alt="">
+                                <h3>Connected</h3>
+                            </div>
+                        </a>
+                        <a href="patient-monitor.html" class="item">
+                            <img class="cb" src="element/checkbox-blank-outline.svg" alt="outline blank checkbox">
+                            <h3 class="fg2">Chan Tai Ming</h3>
+                            <h3 class="fg1">In-bed</h3>
+                            <h3 class="fg2">FEX-003078</h3>
+                            <h3 class="fg1">Male</h3>
+                            <h3 class="fg1">Zone B</h3>
+                            <h3 class="fg1">7/F</h3>
+                            <h3 class="fg1">113</h3>
+                            <h3 class="fg2">RRD42687891S</h3>
+                            <div class="connection connected fg2">
+                                <img src="" alt="">
+                                <h3>Connected</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <img src="element/uneo-logo.png" alt="">
+        <div class="cr">Copyright ©2024 Uneo Inc. All rights reserved.</div>
+        <div class="date">2024-09-18</div>
+        <div class="time">08:08</div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="overlay logout">
+        <div class="warn">
+            <img class="icon" src="element/logout-active.svg" alt="logout icon">
+            <h1 class="title">Logout?</h1>
+            <p class="desc">Confirm to logout.</p>
+            <div class="btn-gp">
+                <a class="btn text-only pri" href="login.html">
+                    <img src="" alt="" class="prefix">
+                    <p class="btn-text pri-text">Confirm</p>
+                </a>
+                <a class="btn text-only outline sec" href="#">
+                    <img src="" alt="" class="prefix">
+                    <p class="btn-text sec-text">Cancel</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="overlay alert-new">
+        <div class="warn">
+            <img class="icon" src="element/alert-box.svg" alt="aler box in gray">
+            <h1 class="title">Exit Bed Alert</h1>
+            <p class="desc">Patient at 7/F, Zone A, Bed 113 left his bed, please follow up as soon as possible.</p>
+            <div class="btn-gp">
+                <a class="btn text-only pri" href="#">
+                    <img src="" alt="" class="prefix">
+                    <p class="btn-text pri-text">Got it</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="overlay inp-ea">
+        <div class="warn">
+            <img class="icon" src="element/alert-box.svg" alt="alert box icon">
+            <h1 class="title">Problem resolved?</h1>
+            <p class="desc">Patient at 7/F, Zone A, Bed 113 left his bed, you may resolve the alert if the situation has been settled.</p>
+            <div class="btn-gp">
+                <a class="btn text-only pri" href="#">
+                    <img src="" alt="" class="prefix">
+                    <p class="btn-text pri-text">Resolve the alert</p>
+                </a>
+                <a class="btn text-only outline sec" href="#">
+                    <img src="" alt="" class="prefix">
+                    <p class="btn-text sec-text">Cancel</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="overlay log">
+        <div class="warn">
+            <img class="icon" src="element/note.svg" alt="note icon">
+            <h1 class="title">Leave a log record?</h1>
+            <p class="desc">Confirm to make a written record of what happened.</p>
+            <div class="btn-gp">
+                <a class="btn text-only pri" href="#">
+                    <img src="" alt="" class="prefix">
+                    <p class="btn-text pri-text">Yes</p>
+                </a>
+                <a class="btn text-only outline sec" href="#">
+                    <img src="" alt="" class="prefix">
+                    <p class="btn-text sec-text">No</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="addLog">
+        <div class="window">
+            <a href="patient-log.html"><img src="element/close.svg" alt="close icon" class="close"></a>
+            <div class="title">New Log Records</div>
+            <div class="subtitle">(patient name) @7/F, Zone A, Bed 113</div>
+            <form action="">
+                <div class="grid">
+                    <div class="input g-c-6">
+                        <label for="logTitle" class="label-container">
+                            <p>Log Title</p>
+                            <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                        </label>
+                        <div class="input-gp">
+                            <input type="text" class="placeholder" id="logTitle" placeholder="Please Enter">
+                            <img class="suffix active" src="" alt="dropdown icon">
+                        </div>
+                        <div class="assistive-text">this is a line of assistive text</div>
+                    </div>
+                    <div class="input g-c-6">
+                        <label for="logDetail" class="label-container">
+                            <p>Log Details</p>
+                            <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                        </label>
+                        <div class="input-gp">
+                            <textarea class="placeholder" id="logDetail" placeholder="Please Enter"></textarea>
+                            <img class="suffix active" src="" alt="dropdown icon">
+                        </div>
+                        <div class="assistive-text">this is a line of assistive text</div>
+                    </div>
+                </div>
+                <div class="btn-gp">
+                    <a class="btn text-only pri" href="patient-log.html">
+                        <img src="" alt="" class="prefix">
+                        <p class="btn-text pri-text">Create Log</p>
+                    </a>
+                    <a class="btn text-only outline sec" href="patient-log.html">
+                        <img src="" alt="" class="prefix">
+                        <p class="btn-text sec-text">Cancel</p>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="addPatient">
+        <div class="window">
+            <a href="patient-list.html"><img src="element/close.svg" alt="close icon" class="close"></a>
+            <img src="" alt="" class="icon">
+            <div class="title">Add Patient</div>
+            <div class="tab-list">
+                <a href="#" class="tab active tab-1">Patient Profile</a>
+                <a href="#" class="tab tab-2">Bed Location</a>
+            </div>
+                <!-- Stage 1 -->
+                <form action="">
+                    <div class="grid st1">
+                        <!-- Name -->
+                        <div class="input g-c-6">
+                            <label for="name" class="label-container">
+                                <p>Name</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="name" name="name" placeholder="Enter here"
+                                    required>
+                                <img class="suffix" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">Oops! Something went wrong.</div>
+                        </div>
+                        <!-- Height -->
+                        <div class="input g-c-3">
+                            <label for="height" class="label-container">
+                                <p>Height</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="height" name="height" placeholder="Enter here" required>
+                                <img class="suffix" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">Oops! Something went wrong.</div>
+                        </div>
+                        <!-- Weight -->
+                        <div class="input g-c-3">
+                            <label for="weight" class="label-container">
+                                <p>Weight</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="weight" name="weight" placeholder="Enter here" required>
+                                <img class="suffix" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">Oops! Something went wrong.</div>
+                        </div>
+                        <!-- Sex -->
+                        <div class="input g-c-3">
+                            <label for="sex" class="label-container">
+                                <p>Sex</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="sex" name="sex" placeholder="Male" required>
+                                <img class="suffix" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">Oops! Something went wrong.</div>
+                        </div>
+                        <!-- DOB -->
+                        <div class="input g-c-3">
+                            <label for="dob" class="label-container">
+                                <p>Date of Birth</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="date" class="placeholder" id="sex" name="dob" placeholder="Enter here" required>
+                                <img class="suffix" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">Oops! Something went wrong.</div>
+                        </div>
+                    </div>
+                    <div class="btn-gp st1">
+                        <div class="btn text-only pri">
+                            <img src="" alt="" class="prefix">
+                            <p class="btn-text pri-text">Continue</p>
+                        </div>
+                        <div class="btn text-only outline sec">
+                            <img src="" alt="" class="prefix">
+                            <p class="btn-text sec-text">Cancel</p>
+                        </div>
+                    </div>
+                </form>
+                <!-- Stage 2 -->
+                <form action="">
+                    <div class="grid st2">
+                        <!-- Building -->
+                        <div class="input dropdown building suffix g-c-3">
+                            <label for="building" class="label-container">
+                                <p>Building</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="building" placeholder="Please Select" readonly>
+                                <img class="suffix active" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">this is a line of assistive text</div>
+                            <div class="list">
+                                <div class="item opt1">Building 1</div>
+                                <div class="item opt2">Building 2</div>
+                                <div class="item opt3">Building 3</div>
+                                <div class="item opt4">Building 4</div>
+                                <div class="item opt5">Building 5</div>
+                            </div>
+                        </div>
+                        <!-- Floor -->
+                        <div class="input dropdown floor suffix g-c-3">
+                            <label for="floor" class="label-container">
+                                <p>Floor</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="floor" placeholder="Please Select" readonly>
+                                <img class="suffix active" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">this is a line of assistive text</div>
+                            <div class="list">
+                                <div class="item opt1">1F</div>
+                                <div class="item opt2">2F</div>
+                                <div class="item opt3">3F</div>
+                                <div class="item opt4">4F</div>
+                                <div class="item opt5">5F</div>
+                                <div class="item opt6">6F</div>
+                                <div class="item opt7">7F</div>
+                            </div>
+                        </div>
+                        <!-- Section -->
+                        <div class="input dropdown section suffix g-c-3">
+                            <label for="section" class="label-container">
+                                <p>Section</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="section" placeholder="Please Select" readonly>
+                                <img class="suffix active" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">this is a line of assistive text</div>
+                            <div class="list">
+                                <div class="item opt1">Zone A</div>
+                                <div class="item opt2">Zone B</div>
+                                <div class="item opt3">Zone C</div>
+                                <div class="item opt4">Zone D</div>
+                            </div>
+                        </div>
+                        <!-- Bed -->
+                        <div class="input g-c-3">
+                            <label for="bed" class="label-container">
+                                <p>Bed</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="bed" placeholder="Enter here"
+                                    required>
+                                <img class="suffix" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">Oops! Something went wrong.</div>
+                        </div>
+                    </div>
+                    <div class="btn-gp st2">
+                        <div class="btn text-only pri">
+                            <img src="" alt="" class="prefix">
+                            <p class="btn-text pri-text">Continue</p>
+                        </div>
+                        <div class="btn text-only outline sec">
+                            <img src="" alt="" class="prefix">
+                            <p class="btn-text sec-text">Back</p>
+                        </div>
+                    </div>
+                </form>
+                <!-- Stage 3 -->
+                <div class="btn-gp st3">
+                    <div class="btn text-only pri">
+                        <img src="" alt="" class="prefix">
+                        <p class="btn-text pri-text">Okay</p>
+                    </div>
+                    <div class="btn text-only outline sec">
+                        <img src="" alt="" class="prefix">
+                        <p class="btn-text sec-text">Link a device</p>
+                    </div>
+                </div>
+                <!-- Stage 4 -->
+                <form action="">
+                    <div class="grid st4-1">
+                        <div class="input dropdown device suffix g-c-6">
+                            <label for="building" class="label-container">
+                                <p>Device ID</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="device" placeholder="Please Select" readonly>
+                                <img class="suffix active" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">this is a line of assistive text</div>
+                            <div class="list">
+                                <div class="item opt1">ADPS-003078-S</div>
+                                <div class="item opt2">ADPS-003079-S</div>
+                                <div class="item opt3">ADPS-003080-S</div>
+                                <div class="item opt4">ADPS-003081-S</div>
+                                <div class="item opt5">ADPS-003082-S</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-gp st4-1">
+                        <div class="btn text-only pri">
+                            <img src="" alt="" class="prefix">
+                            <p class="btn-text pri-text">Confirm</p>
+                        </div>
+                        <div class="btn text-only outline sec">
+                            <img src="" alt="" class="prefix">
+                            <p class="btn-text sec-text">Link with new device</p>
+                        </div>
+                    </div>
+                    <div class="grid st4-2">
+                        <div class="input g-c-3">
+                            <label for="d-id" class="label-container">
+                                <p>Device ID</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="d-id" placeholder="Please Enter">
+                                <img class="suffix active" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">this is a line of assistive text</div>
+                        </div>
+                        <div class="input g-c-3">
+                            <label for="mac" class="label-container">
+                                <p>MAC</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="mac" placeholder="Please Enter">
+                                <img class="suffix active" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">this is a line of assistive text</div>
+                        </div>
+                        <div class="input g-c-3">
+                            <label for="d-ip" class="label-container">
+                                <p>Device IP</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="d-ip" placeholder="Please Enter">
+                                <img class="suffix active" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">this is a line of assistive text</div>
+                        </div>
+                    </div>
+                    <div class="btn-gp st4-2">
+                        <div class="btn text-only pri">
+                            <img src="" alt="" class="prefix">
+                            <p class="btn-text pri-text">Confirm</p>
+                        </div>
+                        <div class="btn text-only outline sec">
+                            <img src="" alt="" class="prefix">
+                            <p class="btn-text sec-text">Link with registered device</p>
+                        </div>
+                    </div>
+                </form>
+                <!-- Stage 5 -->
+                <div class="connecting">
+                    <img src="element/connecting.gif" alt="connecting">
+                    <p>Connecting...</p>
+                </div>
+                <!-- Stage 6 -->
+                <div class="btn-gp st6">
+                    <a href="patient-list.html" class="btn text-only pri">
+                        <img src="" alt="" class="prefix">
+                        <p class="btn-text pri-text">Okay</p>
+                    </a>
+                </div>
+
+            </div>  
+    </div>
+    <div class="overlay newpwConfirm">
+        <div class="warn">
+            <img class="icon" src="element/check-active.svg" alt="tick icon">
+            <h1 class="title">New password has been updated</h1>
+            <p class="desc">remember to use the new password when you login next time.</p>
+            <div class="btn-gp">
+                <a class="btn text-only pri" href="#">
+                    <img src="" alt="" class="prefix">
+                    <p class="btn-text pri-text">Okay</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="changePassword">
+        <div class="window">
+            <div class="title">New Password</div>
+            <div class="subtitle"></div>
+            <img src="element/close.svg" alt="" class="close">
+            <form action="">
+                <div class="grid">
+                    <!-- Current Password -->
+                    <div class="input g-c-6 suffix">
+                        <label for="cpw" class="label-container">
+                            <p>Enter your current password</p>
+                            <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                        </label>
+                        <div class="input-gp">
+                            <input type="password" class="placeholder" name="cpw" placeholder="Enter here"
+                                required>
+                            <img class="suffix hide" src="element/eye-off.svg" alt="eye icon">
+                        </div>
+                        <div class="assistive-text active">Must include one upper and one lower case alphabet.</div>
+                    </div>
+                    <!-- New Password -->
+                    <div class="input g-c-6 suffix">
+                        <label for="npw" class="label-container">
+                            <p>Enter your new password</p>
+                            <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                        </label>
+                        <div class="input-gp">
+                            <input type="password" class="placeholder" name="npw" placeholder="Enter here"
+                                required>
+                            <img class="suffix hide" src="element/eye-off.svg" alt="eye icon">
+                        </div>
+                        <div class="assistive-text active">Must include one upper and one lower case alphabet.</div>
+                    </div>
+                    <!-- Confirm Password -->
+                    <div class="input g-c-6 suffix">
+                        <label for="cnpw" class="label-container">
+                            <p>Confirm your new password</p>
+                            <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                        </label>
+                        <div class="input-gp">
+                            <input type="password" class="placeholder" name="cnpw" placeholder="Enter here" required>
+                            <img class="suffix hide" src="element/eye-off.svg" alt="eye icon">
+                        </div>
+                        <div class="assistive-text active">Must include one upper and one lower case alphabet.</div>
+                    </div>
+                </div>
+                <div class="btn-gp">
+                    <div class="btn text-only pri">
+                        <img src="" alt="" class="prefix">
+                        <p class="btn-text pri-text">Confirm</p>
+                    </div>
+                    <div class="btn text-only outline sec">
+                        <img src="" alt="" class="prefix">
+                        <p class="btn-text sec-text">Back</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Side Menu -->
+    <div class="sideMenu">
+        <img src="element/uext.svg" alt="" class="logo">
+        <div class="option-list">
+            <div class="list">
+                <a href="index.html" class="option">Home</a>
+                <a href="patient-list.html" class="option">Patient</a>
+                <a href="device-list.html" class="option">Device</a>
+                <a href="account-list.html" class="option">Account</a>
+            </div>
+            <div class="list">
+                <a href="account.html" class="option">Profile Setting</a>
+                <a class="option" id="changePassword-3">Change Password</a>
+            </div>
+        </div>
+        <div class="btn frameless" id="logout-btn">
+            <img src="" alt="" class="prefix">
+            <p class="btn-text">Logout</p>
+        </div>
+    </div>
+    <div class="sideMenu-overlay"></div>
+
+    <!-- Javascripts -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="js/general.js"></script>
+    <script src="js/dropdown-menu.js"></script>
+    <script src="js/overlay.js"></script>
+</body>
+</html>
