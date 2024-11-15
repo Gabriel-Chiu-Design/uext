@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/input.css">
+    <link rel="stylesheet" href="css/btn.css">
+    <link rel="stylesheet" href="css/overlay.css">
+    <link rel="stylesheet" href="css/login.css">
+    <title>UEXT - 登入</title>
+</head>
+<body>
+    <img class="background" src="element/login-bg.svg" alt="">
+    <div class="login">
+        <img class="uextLogo" src="element/uext.svg" alt="">
+        <div class="title">離床警示系統</div>
+        <!-- Default Login -->
+        <form class="st1 active">
+        <!-- Login -->
+            <div class="input g-c-6 suffix">
+                <label for="login" class="label-container">
+                    <p>登入</p>
+                    <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                </label>
+                <div class="input-gp">
+                    <input type="email" pattern="" class="placeholder" name="login" placeholder="請輸入"
+                        required>
+                    <img class="suffix" src="element/eye-off.svg" alt="eye icon">
+                </div>
+                <div class="assistive-text">須包含至少一個大寫英文字元及一個數字</div>
+            </div>
+            <!-- Password -->
+            <div class="input g-c-6 suffix">
+                <label for="pw" class="label-container">
+                    <p>密碼</p>
+                    <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                </label>
+                <div class="input-gp">
+                    <input type="password" class="placeholder" name="pw" placeholder="請輸入" required>
+                    <img class="suffix hide" src="element/eye-off.svg" alt="eye icon">
+                </div>
+                <div class="assistive-text">須包含至少一個大寫英文字元及一個數字</div>
+            </div>
+            <div class="btn-gp">
+                <a class="btn text-only pri" href="index-chi.html">
+                    <img src="" alt="" class="prefix">
+                    <p class="btn-text pri-text">登入</p>
+                </a>
+                <div class="btn text-only outline sec" id="forget-pw">
+                    <img src="" alt="" class="prefix">
+                    <p class="btn-text sec-text">忘記密碼</p>
+                </div>
+            </div>
+        </form>
+        <!-- Forget Password -->
+        <form class="st2">
+            <!-- Forget Password -->
+            <div class="input g-c-6">
+                <label for="reset" class="label-container">
+                    <p>輸入你的註冊電郵</p>
+                    <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                </label>
+                <div class="input-gp">
+                    <input type="email" class="placeholder" name="reset" placeholder="example@gmail.com"
+                        required>
+                    <img class="suffix" src="element/eye-off.svg" alt="eye icon">
+                </div>
+                <div class="assistive-text">須包含至少一個大寫英文字元及一個數字</div>
+            </div>
+            <div class="btn-gp">
+                <a class="btn text-only pri">
+                    <img src="" alt="" class="prefix">
+                    <p class="btn-text pri-text">發送重設密碼連結</p>
+                </a>
+            </div>
+        </form>
+        <!-- Confirm reset link sent -->
+        <div class="st3">
+            <h1>重設密碼的連結已發送至 <br><br> (uneo**********@gmail.com)</h1>
+            <div class="btn-gp">
+                <a class="btn text-only pri">
+                    <img src="" alt="" class="prefix">
+                    <p class="btn-text pri-text">返回登入</p>
+                </a>
+            </div>
+        </div>
+        <!-- Reset Password -->
+        <form class="st4">
+            <!-- Password -->
+            <div class="input g-c-6 suffix">
+                <label for="pw" class="label-container">
+                    <p>你的新密碼</p>
+                    <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                </label>
+                <div class="input-gp">
+                    <input type="password" class="placeholder" name="pw" placeholder="請輸入"
+                        required>
+                    <img class="suffix hide" src="element/eye-off.svg" alt="eye icon">
+                </div>
+                <div class="assistive-text active">須包含至少一個大寫英文字元及一個數字</div>
+            </div>
+            <!-- Confirm Password -->
+            <div class="input g-c-6 suffix">
+                <label for="cpw" class="label-container">
+                    <p>確認你的新密碼</p>
+                    <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                </label>
+                <div class="input-gp">
+                    <input type="password" class="placeholder" name="cpw" placeholder="請輸入" required>
+                    <img class="suffix hide" src="element/eye-off.svg" alt="eye icon">
+                </div>
+                <div class="assistive-text active">須包含至少一個大寫英文字元及一個數字</div>
+            </div>
+        </form>
+    </div>
+    <footer>
+        <img src="element/uneo-logo.png" alt="">
+        <div class="cr">版權所有 ©2024 Uneo Inc. </div>
+        <div class="date">2024-09-18</div>
+        <div class="time">08:08</div>
+    </footer>
+
+    <!-- Javascripts -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="js/general.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>

@@ -41,7 +41,7 @@ $(document).ready(function () {
         $(".login .title").text("Exit Bed Alarm System");
     });
 
-    if($(window).width() >= 1024){
+    if($(window).width() <= 1024){
         // do your stuff
         $("#forget-pw").click(function (e) { 
             e.preventDefault();

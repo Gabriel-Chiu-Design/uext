@@ -633,5 +633,9 @@
     .addUser .btn-gp,
     .changePassword .btn-gp{
     margin-top: 0px;
-}
+    }
+
+    .btn-gp{
+        gap: 24px;
+    }
 }

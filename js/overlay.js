@@ -26,6 +26,19 @@ $(document).ready(function () {
         });
     });
 
+    // LOGOUT OVERLAY
+    $(".setting .logout.chi").click(function (e) { 
+        e.preventDefault();
+        // Open Overlay
+        $(".overlay.logout").addClass("active");
+
+        // Close Overlay
+        $(".overlay .sec").click(function (e) { 
+            e.preventDefault();
+            $(".overlay").removeClass("active");
+        });
+    });
+
     // EXIT ALERT OVERLAY
     $(".alerts .alert-list").on("click", ".new",function (e) { 
         e.preventDefault();
