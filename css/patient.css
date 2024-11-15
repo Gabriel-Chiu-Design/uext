@@ -471,7 +471,7 @@
     color: var(--700, #4D4D4D);
     font-size: 24px;
     font-weight: 400;
-    line-height: 115%; /* 27.6px */
+    line-height: 125%; /* 27.6px */
 }
 
 .alertOpt .opt-list{
@@ -582,6 +582,10 @@
 .alertOpt .opt-grid .opt .desc .desc-input::after{
     content: "min";
     font-size: 20px;
+}
+
+.alertOpt.chi .opt-grid .opt .desc .desc-input::after{
+    content: "分";
 }
 
 .alertOpt .opt-grid .opt .desc .desc-input.rpm::after{
@@ -1200,6 +1204,7 @@
     -webkit-line-clamp: 3;
     overflow: hidden;
     text-overflow: ellipsis;
+    line-height: 125%;
 }
 .ll .item .btn-gp{
     display:flex;

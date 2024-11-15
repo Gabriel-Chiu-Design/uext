@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/input.css">
+    <link rel="stylesheet" href="css/btn.css">
+    <link rel="stylesheet" href="css/patient.css">
+    <link rel="stylesheet" href="css/overlay.css">
+    <title>UEXT - 提示設定</title>
+</head>
+
+<body>
+    <!-- Main Content -->
+    <header>
+        <a href="index-chi.html"><img src="element/logo.svg" alt="UEXT Logo" class="logo"></a>
+        <div class="navbar">
+            <a href="index-chi.html">首頁</a>
+            <a class="active" href="patient-list-chi.html">病人管理</a>
+            <a href="device-list-chi.html">裝置管理</a>
+            <a href="account-list-chi.html">帳戶管理</a>
+        </div>
+        <div class="other">
+            <div class="lang">
+                <img src="element/lang.svg" alt="language button" class="langBtn">
+                <div class="list">
+                    <a href="index.html" class="option"> English</a>
+                    <a href="#" class="option active"><img src="element/check.svg" alt=""> 繁體中文 (當前語言)</a>
+                </div>
+            </div>
+            <div class="notification">
+                <img src="element/notice-active.svg" alt="" class="notiBtn">
+                <div class="list">
+                    <div class="notice">
+                        <div class="title">病人離床通知</div>
+                        <div class="content">陳達明 (7樓, 區域A, 床號113) 剛剛離開了床.</div>
+                        <div class="time">今天 11:45</div>
+                        <img src="element/close.svg" alt="" class="close">
+                    </div>
+                    <div class="notice">
+                        <div class="title">病人離床通知</div>
+                        <div class="content">陳達明 (7樓, 區域A, 床號113) 剛剛離開了床.</div>
+                        <div class="time">今天 11:45</div>
+                        <img src="element/close.svg" alt="" class="close">
+                    </div>
+                    <div class="notice">
+                        <div class="title">病人離床通知</div>
+                        <div class="content">陳達明 (7樓, 區域A, 床號113) 剛剛離開了床.</div>
+                        <div class="time">今天 11:45</div>
+                        <img src="element/close.svg" alt="" class="close">
+                    </div>
+                    <div class="notice">
+                        <div class="title">病人離床通知</div>
+                        <div class="content">陳達明 (7樓, 區域A, 床號113) 剛剛離開了床.</div>
+                        <div class="time">今天 11:45</div>
+                        <img src="element/close.svg" alt="" class="close">
+                    </div>
+                    <div class="notice">
+                        <div class="title">病人離床通知</div>
+                        <div class="content">陳達明 (7樓, 區域A, 床號113) 剛剛離開了床.</div>
+                        <div class="time">今天 11:45</div>
+                        <img src="element/close.svg" alt="" class="close">
+                    </div>
+                </div>
+            </div>
+            <div class="setting">
+                <img src="element/profile-icon.png" alt="" class="settingBtn">
+                <div class="list">
+                    <div class="profile">
+                        <img src="element/profile-icon.png" alt="">
+                        <p>UEXT - Amy</p>
+                    </div>
+                    <a href="account-chi.html" class="option acc">
+                        <img src="element/account.svg" alt="">
+                        <p>我的帳戶</p>
+                    </a>
+                    <a href="#" class="option pw" id="changePassword">
+                        <img src="element/lock.svg" alt="">
+                        <p>更改密碼</p>
+                    </a>
+                    <a href="#" class="option logout">
+                        <img src="element/logout.svg" alt="">
+                        <p>登出</p>
+                    </a>
+                </div>
+            </div>
+            <img src="element/hanmburger.svg" alt="" class="hamburger">
+        </div>    
+    </header>
+    <div class="wrap">
+        <div class="pp">
+            <h1>病人資料</h1>
+            <div class="pfl">
+                <!-- Patient Name -->
+                <div class="input g-c-6">
+                    <label for="name" class="label-container">
+                        <p>名稱</p>
+                        <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                    </label>
+                    <div class="input-gp">
+                        <input type="text" class="placeholder" id="name" name="name" placeholder="陳達明"
+                            required>
+                        <img class="suffix" src="" alt="dropdown icon">
+                    </div>
+                    <div class="assistive-text">Oops! Something went wrong.</div>
+                </div>
+                <!-- Patient ID -->
+                <div class="input g-c-6">
+                    <label for="p-id" class="label-container">
+                        <p>病人編號</p>
+                        <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                    </label>
+                    <div class="input-gp">
+                        <input type="text" class="placeholder" id="p-id" name="p-id" placeholder="FEX-003078" required>
+                        <img class="suffix" src="" alt="dropdown icon">
+                    </div>
+                    <div class="assistive-text">Oops! Something went wrong.</div>
+                </div>
+                <!-- Bed -->
+                <div class="input g-c-2">
+                    <label for="p-id" class="label-container">
+                        <p>床號</p>
+                        <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                    </label>
+                    <div class="input-gp">
+                        <input type="text" class="placeholder" id="p-id" name="p-id" placeholder="1012" required>
+                        <img class="suffix" src="" alt="dropdown icon">
+                    </div>
+                    <div class="assistive-text">Oops! Something went wrong.</div>
+                </div>
+                <!-- Section -->
+                <div class="input g-c-2">
+                    <label for="section" class="label-container">
+                        <p>區域</p>
+                        <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                    </label>
+                    <div class="input-gp">
+                        <input type="text" class="placeholder" id="section" name="section" placeholder="Zone B"
+                            required>
+                        <img class="suffix" src="" alt="dropdown icon">
+                    </div>
+                    <div class="assistive-text">Oops! Something went wrong.</div>
+                </div>
+                <!-- Floor -->
+                <div class="input g-c-2">
+                    <label for="floor" class="label-container">
+                        <p>樓層</p>
+                        <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                    </label>
+                    <div class="input-gp">
+                        <input type="text" class="placeholder" id="floor" name="floor" placeholder="7樓" required>
+                        <img class="suffix" src="" alt="dropdown icon">
+                    </div>
+                    <div class="assistive-text">Oops! Something went wrong.</div>
+                </div>
+                <!-- Sex -->
+                <div class="input g-c-3">
+                    <label for="sex" class="label-container">
+                        <p>性別</p>
+                        <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                    </label>
+                    <div class="input-gp">
+                        <input type="text" class="placeholder" id="sex" name="sex" placeholder="男" required>
+                        <img class="suffix" src="" alt="dropdown icon">
+                    </div>
+                    <div class="assistive-text">Oops! Something went wrong.</div>
+                </div>
+                <!-- Arrival Date -->
+                <div class="input g-c-3">
+                    <label for="arrival" class="label-container">
+                        <p>入院日期</p>
+                        <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                    </label>
+                    <div class="input-gp">
+                        <input type="text" class="placeholder" id="arrival" name="arrival" placeholder="2024/07/22"
+                            required>
+                        <img class="suffix" src="" alt="dropdown icon">
+                    </div>
+                    <div class="assistive-text">Oops! Something went wrong.</div>
+                </div>
+                <!-- Height -->
+                <div class="input g-c-3">
+                    <label for="height" class="label-container">
+                        <p>身高</p>
+                        <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                    </label>
+                    <div class="input-gp">
+                        <input type="text" class="placeholder" id="height" name="height" placeholder="178公分" required>
+                        <img class="suffix" src="" alt="dropdown icon">
+                    </div>
+                    <div class="assistive-text">Oops! Something went wrong.</div>
+                </div>
+                <!-- Weight -->
+                <div class="input g-c-3">
+                    <label for="weight" class="label-container">
+                        <p>體重</p>
+                        <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                    </label>
+                    <div class="input-gp">
+                        <input type="text" class="placeholder" id="weight" name="weight" placeholder="66公斤" required>
+                        <img class="suffix" src="" alt="dropdown icon">
+                    </div>
+                    <div class="assistive-text">Oops! Something went wrong.</div>
+                </div>
+                <!-- Device ID -->
+                <div class="input g-c-3">
+                    <label for="d-id" class="label-container">
+                        <p>裝置編號</p>
+                        <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                    </label>
+                    <div class="input-gp">
+                        <input type="text" class="placeholder" id="d-id" name="d-id" placeholder="RRD42687891S" required
+                            readonly>
+                        <img class="suffix" src="" alt="dropdown icon">
+                    </div>
+                    <div class="assistive-text">Oops! Something went wrong.</div>
+                </div>
+                <!-- Connection Status -->
+                <div class="input g-c-3 suffix">
+                    <label for="connection" class="label-container">
+                        <p>裝置連結</p>
+                        <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                    </label>
+                    <div class="input-gp">
+                        <input type="text" class="placeholder" id="connection" name="connection" value="已連結"
+                            readonly>
+                        <img class="suffix active" src="" alt="dropdown icon">
+                    </div>
+                    <div class="assistive-text active">點擊以重新連結</div>
+                </div>
+            </div>
+            <div class="btn-gp">
+                <div class="btn text-only inactive">
+                    <img src="" alt="" class="prefix">
+                    <p class="btn-text">儲存</p>
+                </div>
+                <div class="btn text-only outline" id="discharge">
+                    <img src="" alt="" class="prefix">
+                    <p class="btn-text">出院確認</p>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="tab">
+                <a href="patient-monitor-chi.html" class="opt opt-1">實時檢測</a>
+                <a href="patient-alert-chi.html" class="opt active opt-2">提示設定</a>
+                <a href="patient-analysis-chi.html" class="opt opt-3">分析報表</a>
+                <a href="patient-log-chi.html" class="opt opt-4">病歷</a>
+                <a  class="btn frameless" href="patient-list-chi.html">
+                    <img src="" alt="" class="prefix">
+                    <p class="btn-text">返回列表</p>
+                </a>
+            </div>
+            <div class="alertSection">
+                <div class="alertSetting">
+                    <div class="alertHead">
+                        <h1>姿勢提示</h1>
+                        <div class="toggle">
+                            <img class="line" src="element/toggle-line.svg" alt="toggle button">
+                            <img class="dot" src="element/toggle-dot.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="alertOpt chi">
+                        <p class="alertDesc">這是一段關於上述提示的描述和說明</p>
+                        <div class="opt-list">
+                            <div class="opt-grid">
+                                <div class="opt-box">
+                                    <div class="opt">
+                                        <img src="element/checkbox-blank-outline.svg" alt="">
+                                        <div class="desc-box">
+                                            <p>仰臥</p>
+                                            <div class="desc">
+                                                <p>這是上述提示的描述和說明</p>
+                                                <div class="desc-input">
+                                                    <input type="number" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="assistive-text">This is a line of text</div>
+                                </div>
+                                <div class="opt-box">
+                                    <div class="opt">
+                                        <img src="element/checkbox-blank-outline.svg" alt="">
+                                        <div class="desc-box">
+                                            <p>俯臥</p>
+                                            <div class="desc">
+                                                <p>這是上述提示的描述和說明</p>
+                                                <div class="desc-input">
+                                                    <input type="number" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="assistive-text">This is a line of text</div>
+                                </div>
+                                <div class="opt-box">
+                                    <div class="opt">
+                                        <img src="element/checkbox-blank-outline.svg" alt="">
+                                        <div class="desc-box">
+                                            <p>左側橫向</p>
+                                            <div class="desc">
+                                                <p>這是上述提示的描述和說明</p>
+                                                <div class="desc-input">
+                                                    <input type="number" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="assistive-text">This is a line of text</div>
+                                </div>
+                                <div class="opt-box">
+                                    <div class="opt">
+                                        <img src="element/checkbox-blank-outline.svg" alt="">
+                                        <div class="desc-box">
+                                            <p>右側橫向</p>
+                                            <div class="desc">
+                                                <p>這是上述提示的描述和說明</p>
+                                                <div class="desc-input">
+                                                    <input type="number" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="assistive-text">This is a line of text</div>
+                                </div>
+                                <div class="opt-box">
+                                    <div class="opt">
+                                        <img src="element/checkbox-blank-outline.svg" alt="">
+                                        <div class="desc-box">
+                                            <p>左側傾斜</p>
+                                            <div class="desc">
+                                                <p>這是上述提示的描述和說明</p>
+                                                <div class="desc-input">
+                                                    <input type="number" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="assistive-text">This is a line of text</div>
+                                </div>
+                                <div class="opt-box">
+                                    <div class="opt">
+                                        <img src="element/checkbox-blank-outline.svg" alt="">
+                                        <div class="desc-box">
+                                            <p>右側傾斜</p>
+                                            <div class="desc">
+                                                <p>這是上述提示的描述和說明</p>
+                                                <div class="desc-input">
+                                                    <input type="number" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="assistive-text">This is a line of text</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-gp">
+                                <div class="btn text-only inactive">
+                                    <img src="" alt="" class="prefix">
+                                    <p class="btn-text">儲存</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="alertSetting">
+                    <div class="alertHead">
+                        <h1>臥床狀態</h1>
+                        <div class="toggle">
+                            <img class="line" src="element/toggle-line.svg" alt="toggle button">
+                            <img class="dot" src="element/toggle-dot.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="alertOpt chi">
+                        <p class="alertDesc">這是一段關於上述提示的描述和說明</p>
+                        <div class="opt-list">
+                            <div class="opt-grid">
+                                <div class="opt-box">
+                                    <div class="opt">
+                                        <img src="element/checkbox-blank-outline.svg" alt="">
+                                        <div class="desc-box">
+                                            <p>離床提示</p>
+                                            <div class="desc">
+                                                <p>這是上述提示的描述和說明</p>
+                                                <div class="desc-input">
+                                                    <input type="number" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="assistive-text">This is a line of text</div>
+                                </div>
+                                <div class="opt-box">
+                                    <div class="opt">
+                                        <img src="element/checkbox-blank-outline.svg" alt="">
+                                        <div class="desc-box">
+                                            <p>床緣提示</p>
+                                            <div class="desc">
+                                                <p>這是上述提示的描述和說明</p>
+                                                <div class="desc-input">
+                                                    <input type="number" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="assistive-text">This is a line of text</div>
+                                </div>
+                            </div>
+                            <div class="btn-gp">
+                                <div class="btn text-only inactive">
+                                    <img src="" alt="" class="prefix">
+                                    <p class="btn-text">儲存</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="alertSetting">
+                    <div class="alertHead">
+                        <h1>心率與呼吸率</h1>
+                        <div class="toggle">
+                            <img class="line" src="element/toggle-line.svg" alt="toggle button">
+                            <img class="dot" src="element/toggle-dot.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="alertOpt">
+                        <p class="alertDesc">這是一段關於上述提示的描述和說明</p>
+                        <div class="opt-list">
+                            <div class="opt-grid">
+                                <div class="opt-box">
+                                    <div class="opt">
+                                        <img src="element/checkbox-blank-outline.svg" alt="">
+                                        <div class="desc-box">
+                                            <p>呼吸率上限</p>
+                                            <div class="desc">
+                                                <p>這是上述提示的描述和說明</p>
+                                                <div class="desc-input rpm">
+                                                    <input type="number" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="opt-box">
+                                    <div class="opt">
+                                        <img src="element/checkbox-blank-outline.svg" alt="">
+                                        <div class="desc-box">
+                                            <p>呼吸率下限</p>
+                                            <div class="desc">
+                                                <p>這是上述提示的描述和說明</p>
+                                                <div class="desc-input rpm">
+                                                    <input type="number" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="opt-box">
+                                    <div class="opt">
+                                        <img src="element/checkbox-blank-outline.svg" alt="">
+                                        <div class="desc-box">
+                                            <p>心率上限</p>
+                                            <div class="desc">
+                                                <p>這是上述提示的描述和說明</p>
+                                                <div class="desc-input bpm">
+                                                    <input type="number" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="opt-box">
+                                    <div class="opt">
+                                        <img src="element/checkbox-blank-outline.svg" alt="">
+                                        <div class="desc-box">
+                                            <p>心率下限</p>
+                                            <div class="desc">
+                                                <p>這是上述提示的描述和說明</p>
+                                                <div class="desc-input bpm">
+                                                    <input type="number" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-gp">
+                                <div class="btn text-only inactive">
+                                    <img src="" alt="" class="prefix">
+                                    <p class="btn-text">Save</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="alertSetting">
+                    <div class="alertHead">
+                        <h1>提示時段</h1>
+                        <div class="toggle">
+                            <img class="line" src="element/toggle-line.svg" alt="toggle button">
+                            <img class="dot" src="element/toggle-dot.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="alertOpt">
+                        <p class="alertDesc">這是一段關於上述提示的描述和說明</p>
+                        <div class="opt-list">
+                            <div class="opt-grid">
+                                <div class="opt-box">
+                                    <div class="opt duration">
+                                        <img src="element/checkbox-blank-outline.svg" alt="">
+                                        <div class="desc-box">
+                                            <p>00:00-24:00</p>
+                                        </div>
+                                    </div>
+                                    <div class="assistive-text">This is a line of text</div>
+                                </div>
+                                <div class="opt-box">
+                                    <div class="opt duration">
+                                        <img src="element/checkbox-blank-outline.svg" alt="">
+                                        <div class="desc-box">
+                                            <p>00:00-08:00</p>
+                                        </div>
+                                    </div>
+                                    <div class="assistive-text">This is a line of text</div>
+                                </div>
+                                <div class="opt-box">
+                                    <div class="opt duration">
+                                        <img src="element/checkbox-blank-outline.svg" alt="">
+                                        <div class="desc-box">
+                                            <p>08:00-16:00</p>
+                                        </div>
+                                    </div>
+                                    <div class="assistive-text">This is a line of text</div>
+                                </div>
+                                <div class="opt-box">
+                                    <div class="opt duration">
+                                        <img src="element/checkbox-blank-outline.svg" alt="">
+                                        <div class="desc-box">
+                                            <p>16:00-24:00</p>
+                                        </div>
+                                    </div>
+                                    <div class="assistive-text">This is a line of text</div>
+                                </div>
+                                <div class="opt-box">
+                                    <div class="opt custom">
+                                        <img src="element/checkbox-blank-outline.svg" alt="">
+                                        <div class="desc-box">
+                                            <p>自定義</p>
+                                            <div class="desc">
+                                                <div class="desc-input">
+                                                    <input type="number" readonly>
+                                                </div>
+                                                <p>到</p>
+                                                <div class="desc-input">
+                                                    <input type="number" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="assistive-text">This is a line of text</div>
+                                </div>
+                            </div>
+                            <div class="btn-gp">
+                                <div class="btn text-only inactive">
+                                    <img src="" alt="" class="prefix">
+                                    <p class="btn-text">儲存</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <img src="element/uneo-logo.png" alt="">
+        <div class="cr">版權所有 ©2024 Uneo Inc.</div>
+        <div class="date">2024-09-18</div>
+        <div class="time">08:08</div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="overlay discharge">
+        <div class="warn">
+            <img class="icon" src="element/alert-box.svg" alt="alert box">
+            <h1 class="title">病人已經出院？</h1>
+            <p class="desc">確認會失去實時監測的數據</p>
+            <div class="btn-gp">
+                <a class="btn text-only pri" href="account-list.html">
+                    <img src="" alt="" class="prefix">
+                    <p class="btn-text pri-text">確認</p>
+                </a>
+                <a class="btn text-only outline sec" href="account-list.html">
+                    <img src="" alt="" class="prefix">
+                    <p class="btn-text sec-text">取消</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="overlay logout">
+        <div class="warn">
+            <img class="icon" src="element/logout-active.svg" alt="logout icon">
+            <h1 class="title">是否要登出</h1>
+            <p class="desc">請確認</p>
+            <div class="btn-gp">
+                <a class="btn text-only pri" href="login.html">
+                    <img src="" alt="" class="prefix">
+                    <p class="btn-text pri-text">登出</p>
+                </a>
+                <a class="btn text-only outline sec" href="#">
+                    <img src="" alt="" class="prefix">
+                    <p class="btn-text sec-text">取消</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="overlay newpwConfirm">
+        <div class="warn">
+            <img class="icon" src="element/check-active.svg" alt="tick icon">
+            <h1 class="title">密碼已經更新</h1>
+            <p class="desc">下次登入時請記得使用新密碼</p>
+            <div class="btn-gp">
+                <a class="btn text-only pri" href="account.html">
+                    <img src="" alt="" class="prefix">
+                    <p class="btn-text pri-text">好的</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="changePassword">
+        <div class="window">
+            <div class="title">新密碼</div>
+            <div class="subtitle"></div>
+            <img src="element/close.svg" alt="" class="close">
+            <form action="">
+                <div class="grid">
+                    <!-- Current Password -->
+                    <div class="input g-c-6 suffix">
+                        <label for="cpw" class="label-container">
+                            <p>輸入目前的密碼</p>
+                            <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                        </label>
+                        <div class="input-gp">
+                            <input type="password" class="placeholder" name="cpw" placeholder="請輸入"
+                                required>
+                            <img class="suffix hide" src="element/eye-off.svg" alt="eye icon">
+                        </div>
+                        <div class="assistive-text">須包含一個大寫及一個數字元</div>
+                    </div>
+                    <!-- New Password -->
+                    <div class="input g-c-6 suffix">
+                        <label for="npw" class="label-container">
+                            <p>建立你的新密碼</p>
+                            <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                        </label>
+                        <div class="input-gp">
+                            <input type="password" class="placeholder" name="npw" placeholder="請輸入"
+                                required>
+                            <img class="suffix hide" src="element/eye-off.svg" alt="eye icon">
+                        </div>
+                        <div class="assistive-text active">須包含一個大寫及一個數字元</div>
+                    </div>
+                    <!-- Confirm Password -->
+                    <div class="input g-c-6 suffix">
+                        <label for="cnpw" class="label-container">
+                            <p>確認你的新密碼</p>
+                            <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                        </label>
+                        <div class="input-gp">
+                            <input type="password" class="placeholder" name="cnpw" placeholder="請輸入" required>
+                            <img class="suffix hide" src="element/eye-off.svg" alt="eye icon">
+                        </div>
+                        <div class="assistive-text active">須包含一個大寫及一個數字元</div>
+                    </div>
+                </div>
+                <div class="btn-gp">
+                    <div class="btn text-only pri">
+                        <img src="" alt="" class="prefix">
+                        <p class="btn-text pri-text">確認</p>
+                    </div>
+                    <div class="btn text-only outline sec">
+                        <img src="" alt="" class="prefix">
+                        <p class="btn-text sec-text">取消</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Side Menu -->
+    <div class="sideMenu">
+        <img src="element/uext.svg" alt="" class="logo">
+        <div class="option-list">
+            <div class="list">
+                <a href="index-chi.html" class="option">首頁</a>
+                <a href="patient-list-chi.html" class="option">病人管理</a>
+                <a href="device-list-chi.html" class="option">裝置管理</a>
+                <a href="account-list-chi.html" class="option">帳戶管理</a>
+            </div>
+            <div class="list">
+                <a href="account-chi.html" class="option">我的帳戶</a>
+                <a class="option" id="changePassword-3">更改密碼</a>
+            </div>
+        </div>
+        <div class="btn frameless" id="logout-btn">
+            <img src="" alt="" class="prefix">
+            <p class="btn-text">登出</p>
+        </div>
+    </div>
+    <div class="sideMenu-overlay"></div>
+
+    <!-- Javascripts -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="js/general.js"></script>
+    <script src="js/patient.js"></script>
+    <script src="js/overlay.js"></script>
+</body>
+
+</html>

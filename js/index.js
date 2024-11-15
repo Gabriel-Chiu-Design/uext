@@ -31,4 +31,16 @@ $(document).ready(function () {
                 $(this).find(".dis-tag").css("background-color", "#333333");
             }
         );
+
+        // Disconnect Bed Tag Text Replacement（Chinese Version）
+        $(".bed.disconnect.chi").hover(function () {
+            // over
+            $(this).find("p").text("重新連結");
+            $(this).find(".dis-tag").css("background-color", "#0D0D0D");
+        }, function () {
+            // out
+            $(this).find("p").text("斷線");
+            $(this).find(".dis-tag").css("background-color", "#333333");
+        }
+    );
 });

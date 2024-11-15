@@ -152,33 +152,6 @@ $(document).ready(function () {
     });
 
 
-    // LEAVVE A LOG REMINDER
-    $("").click(function (e) { 
-        e.preventDefault();
-        // Open Overlay
-        $(".overlay").addClass("active");
-        
-        // Set Icon
-        $(".warn .icon").attr("src", "../element/note.svg");
-
-        // Set Title & Description
-        $(".warn .title").text("Leave a log record?");
-        $(".warn .desc").text("Confirm to make a written record of what happened.");
-
-        // Set Btn
-        $(".warn .pri, .warn .sec").css("display","block")
-        // Replace Btn Text
-        $(".warn .pri-text").text("Yes");
-        $(".warn .sec-text").text("No");
-
-        // Close Overlay
-        $(".overlay .sec, .overlay .pri").click(function (e) { 
-            e.preventDefault();
-            $(".overlay").removeClass("active");
-        });
-    });
-
-
     // UNSAVED LOG ALERT
     $(".editLog .sec").click(function (e) { 
         e.preventDefault();
@@ -187,19 +160,6 @@ $(document).ready(function () {
         // Open Overlay
         $(".unsavedLog").addClass("active");
         
-        // Set Icon
-        $(".warn .icon").attr("src", "../element/alert-box.svg");
-
-        // Set Title & Description
-        $(".warn .title").text("Quit anyway?");
-        $(".warn .desc").text("You will lose the changes made to the log.");
-
-        // Set Btn
-        $(".unsavedLog .sec, .unsavedLog .pri").css("display","block")
-        // Replace Btn Text
-        $(".unsavedLog .pri-text").text("Yes");
-        $(".unsavedLog .sec-text").text("No");
-
         // Close Overlay
         $(".unsavedLog .pri").click(function (e) { 
             e.preventDefault();
@@ -259,6 +219,7 @@ $(document).ready(function () {
         e.preventDefault();
         // Open Stage 3
         $(".addPatient .title").text("New Patient Added!");
+        $(".addPatient.chi .title").text("成功新增病人");
         $(".btn-gp.st3").css("display","flex");
         $(".addPatient .icon").css("display", "block");
         $(".addPatient .icon").attr("src", "../element/check-active.svg");
@@ -283,6 +244,7 @@ $(document).ready(function () {
         $(".tab-2").removeClass("active");
         $(".st3").css("display","none");
         $(".addPatient .title").text("Add Patient");
+        $(".addPatient.chi .title").text("新增病人");
     });
 
     $(".addPatient .st3 .sec").click(function (e) { 
@@ -293,8 +255,10 @@ $(document).ready(function () {
 
         // Open Stage 4
         $(".addPatient .title").text("Link Device");
+        $(".addPatient.chi .title").text("連結裝置");
         $(".addPatient .tab-list").css("display","flex");
         $(".tab-1").addClass("active").removeClass("completed").text("Device Connection");
+        $(".addPatient.chi .tab-1").addClass("active").removeClass("completed").text("裝置連結");
         $(".tab-2").removeClass("active").css("display","none");
         $(".grid.st4-1").addClass("active");
         $(".btn-gp.st4-1").addClass("active");
@@ -339,6 +303,7 @@ $(document).ready(function () {
             {
                 $(".btn-gp.st6").css("display","flex");
                 $(".addPatient .title").text("Device Linked!");
+                $(".addPatient.chi .title").text("成功連結裝置!");
                 $(".addPatient .icon").css("display", "block");
                 $(".addPatient .icon").attr("src", "../element/link-active.svg");
                 $(".connecting").css("display", "none");

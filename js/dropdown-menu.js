@@ -127,4 +127,26 @@ $(document).ready(function () {
             e.preventDefault();
             $(".input.set input").attr("placeholder","Default");
         });
+
+        // Device Confirguration Dropdown List Content Replacement
+        $(".input.set.chi .item.opt1").click(function (e) { 
+            e.preventDefault();
+            $(this).closest(".input").find("input").attr("placeholder","客製一");
+        });
+        $(".input.set.chi .item.opt2").click(function (e) { 
+            e.preventDefault();
+            $(this).closest(".input").find("input").attr("placeholder","客製二");
+        });
+        $(".input.set.chi .item.opt3").click(function (e) { 
+            e.preventDefault();
+            $(this).closest(".input").find("input").attr("placeholder","客製三");
+        });
+        $(".input.set.chi .item.opt4").click(function (e) { 
+            e.preventDefault();
+            $(this).closest(".input").find("input").attr("placeholder","客製四");
+        });
+        $("#reset-chi").click(function (e) { 
+            e.preventDefault();
+            $(".input.set.chi input").attr("placeholder","默認");
+        });
 });

@@ -115,7 +115,6 @@
     width: 1426px;
     min-height: 880px;
     padding: 40px 80px 80px;
-    gap: 48px;
     flex-direction: column;
     align-items: center;
     background: var(--0, #FFF);
@@ -139,12 +138,14 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    margin-bottom: 48px;
 }
 
 .addPatient .tab-list{
     display: flex;
     align-items: center;
     align-self: stretch;
+    margin-bottom: 48px;
 }
 
 .addPatient .tab{
@@ -182,6 +183,7 @@
     grid-template-columns: repeat(6 , 1fr);
     column-gap: 24px;
     row-gap: 40px;
+    margin-bottom: 48px;
 }
 
 .g-c-6{
@@ -448,6 +450,7 @@
     .addDevice .grid{
         column-gap: 24px;
         row-gap: 24px;
+        margin-bottom: 24px;    
     }
     .connecting{
         gap: 24px;

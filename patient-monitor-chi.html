@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,60 +9,58 @@
     <link rel="stylesheet" href="css/btn.css">
     <link rel="stylesheet" href="css/overlay.css">
     <link rel="stylesheet" href="css/patient.css">
-    <link rel="stylesheet" href="css/analysis-details.css">
-    <title>UEXT - Heart Rate Analysis</title>
+    <title>UEXT - 病人資訊</title>
 </head>
+
 <body>
     <!-- Main Content -->
     <header>
-        <a href="index.html"><img src="element/logo.svg" alt="UEXT Logo" class="logo"></a>
+        <a href="index-chi.html"><img src="element/logo.svg" alt="UEXT Logo" class="logo"></a>
         <div class="navbar">
-            <a class="active" href="index.html">Home</a>
-            <a href="patient-list.html">Patient</a>
-            <a href="device-list.html">Device</a>
-            <a href="account-list.html">Account</a>
+            <a href="index-chi.html">首頁</a>
+            <a class="active" href="patient-list-chi.html">病人管理</a>
+            <a href="device-list-chi.html">裝置管理</a>
+            <a href="account-list-chi.html">帳戶管理</a>
         </div>
         <div class="other">
             <div class="lang">
                 <img src="element/lang.svg" alt="language button" class="langBtn">
                 <div class="list">
-                    <a href="#" class="option active">
-                        <img src="element/check.svg" alt="">
-                        English (Current)</a>
-                    <a href="#" class="option">繁體中文</a>
+                    <a href="index.html" class="option"> English</a>
+                    <a href="#" class="option active"><img src="element/check.svg" alt=""> 繁體中文 (當前語言)</a>
                 </div>
             </div>
             <div class="notification">
                 <img src="element/notice-active.svg" alt="" class="notiBtn">
                 <div class="list">
                     <div class="notice">
-                        <div class="title">Patient Exit Bed Notification</div>
-                        <div class="content">Chan Tai Ming (7/F, Zone A, Bed 113) just exit his bed.</div>
-                        <div class="time">Today 11:45</div>
+                        <div class="title">病人離床通知</div>
+                        <div class="content">陳達明 (7樓, 區域A, 床號113) 剛剛離開了床.</div>
+                        <div class="time">今天 11:45</div>
                         <img src="element/close.svg" alt="" class="close">
                     </div>
                     <div class="notice">
-                        <div class="title">Patient Exit Bed Notification</div>
-                        <div class="content">Chan Tai Ming (7/F, Zone A, Bed 113) just exit his bed.</div>
-                        <div class="time">Today 11:45</div>
+                        <div class="title">病人離床通知</div>
+                        <div class="content">陳達明 (7樓, 區域A, 床號113) 剛剛離開了床.</div>
+                        <div class="time">今天 11:45</div>
                         <img src="element/close.svg" alt="" class="close">
                     </div>
                     <div class="notice">
-                        <div class="title">Patient Exit Bed Notification</div>
-                        <div class="content">Chan Tai Ming (7/F, Zone A, Bed 113) just exit his bed.</div>
-                        <div class="time">Today 11:45</div>
+                        <div class="title">病人離床通知</div>
+                        <div class="content">陳達明 (7樓, 區域A, 床號113) 剛剛離開了床.</div>
+                        <div class="time">今天 11:45</div>
                         <img src="element/close.svg" alt="" class="close">
                     </div>
                     <div class="notice">
-                        <div class="title">Patient Exit Bed Notification</div>
-                        <div class="content">Chan Tai Ming (7/F, Zone A, Bed 113) just exit his bed.</div>
-                        <div class="time">Today 11:45</div>
+                        <div class="title">病人離床通知</div>
+                        <div class="content">陳達明 (7樓, 區域A, 床號113) 剛剛離開了床.</div>
+                        <div class="time">今天 11:45</div>
                         <img src="element/close.svg" alt="" class="close">
                     </div>
                     <div class="notice">
-                        <div class="title">Patient Exit Bed Notification</div>
-                        <div class="content">Chan Tai Ming (7/F, Zone A, Bed 113) just exit his bed.</div>
-                        <div class="time">Today 11:45</div>
+                        <div class="title">病人離床通知</div>
+                        <div class="content">陳達明 (7樓, 區域A, 床號113) 剛剛離開了床.</div>
+                        <div class="time">今天 11:45</div>
                         <img src="element/close.svg" alt="" class="close">
                     </div>
                 </div>
@@ -73,17 +72,17 @@
                         <img src="element/profile-icon.png" alt="">
                         <p>UEXT - Amy</p>
                     </div>
-                    <a href="account.html" class="option acc">
+                    <a href="account-chi.html" class="option acc">
                         <img src="element/account.svg" alt="">
-                        <p>Account Settings</p>
+                        <p>我的帳戶</p>
                     </a>
                     <a href="#" class="option pw" id="changePassword">
                         <img src="element/lock.svg" alt="">
-                        <p>Change Password</p>
+                        <p>更改密碼</p>
                     </a>
                     <a href="#" class="option logout">
                         <img src="element/logout.svg" alt="">
-                        <p>Logout</p>
+                        <p>登出</p>
                     </a>
                 </div>
             </div>
@@ -92,16 +91,16 @@
     </header>
     <div class="wrap">
         <div class="pp">
-            <h1>Patient Profile</h1>
+            <h1>病人資料</h1>
             <div class="pfl">
                 <!-- Patient Name -->
                 <div class="input g-c-6">
                     <label for="name" class="label-container">
-                        <p>Name</p>
+                        <p>名稱</p>
                         <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
                     </label>
                     <div class="input-gp">
-                        <input type="text" class="placeholder" id="name" name="name" placeholder="Chan Tai Ming"
+                        <input type="text" class="placeholder" id="name" name="name" placeholder="陳達明"
                             required>
                         <img class="suffix" src="" alt="dropdown icon">
                     </div>
@@ -110,7 +109,7 @@
                 <!-- Patient ID -->
                 <div class="input g-c-6">
                     <label for="p-id" class="label-container">
-                        <p>Patient ID</p>
+                        <p>病人編號</p>
                         <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
                     </label>
                     <div class="input-gp">
@@ -122,7 +121,7 @@
                 <!-- Bed -->
                 <div class="input g-c-2">
                     <label for="p-id" class="label-container">
-                        <p>Bed</p>
+                        <p>床號</p>
                         <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
                     </label>
                     <div class="input-gp">
@@ -134,7 +133,7 @@
                 <!-- Section -->
                 <div class="input g-c-2">
                     <label for="section" class="label-container">
-                        <p>Section</p>
+                        <p>區域</p>
                         <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
                     </label>
                     <div class="input-gp">
@@ -147,11 +146,11 @@
                 <!-- Floor -->
                 <div class="input g-c-2">
                     <label for="floor" class="label-container">
-                        <p>Floor</p>
+                        <p>樓層</p>
                         <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
                     </label>
                     <div class="input-gp">
-                        <input type="text" class="placeholder" id="floor" name="floor" placeholder="7/F" required>
+                        <input type="text" class="placeholder" id="floor" name="floor" placeholder="7樓" required>
                         <img class="suffix" src="" alt="dropdown icon">
                     </div>
                     <div class="assistive-text">Oops! Something went wrong.</div>
@@ -159,11 +158,11 @@
                 <!-- Sex -->
                 <div class="input g-c-3">
                     <label for="sex" class="label-container">
-                        <p>Sex</p>
+                        <p>性別</p>
                         <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
                     </label>
                     <div class="input-gp">
-                        <input type="text" class="placeholder" id="sex" name="sex" placeholder="Male" required>
+                        <input type="text" class="placeholder" id="sex" name="sex" placeholder="男" required>
                         <img class="suffix" src="" alt="dropdown icon">
                     </div>
                     <div class="assistive-text">Oops! Something went wrong.</div>
@@ -171,7 +170,7 @@
                 <!-- Arrival Date -->
                 <div class="input g-c-3">
                     <label for="arrival" class="label-container">
-                        <p>Arrival</p>
+                        <p>入院日期</p>
                         <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
                     </label>
                     <div class="input-gp">
@@ -184,11 +183,11 @@
                 <!-- Height -->
                 <div class="input g-c-3">
                     <label for="height" class="label-container">
-                        <p>Height</p>
+                        <p>身高</p>
                         <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
                     </label>
                     <div class="input-gp">
-                        <input type="text" class="placeholder" id="height" name="height" placeholder="178cm" required>
+                        <input type="text" class="placeholder" id="height" name="height" placeholder="178公分" required>
                         <img class="suffix" src="" alt="dropdown icon">
                     </div>
                     <div class="assistive-text">Oops! Something went wrong.</div>
@@ -196,11 +195,11 @@
                 <!-- Weight -->
                 <div class="input g-c-3">
                     <label for="weight" class="label-container">
-                        <p>Weight</p>
+                        <p>體重</p>
                         <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
                     </label>
                     <div class="input-gp">
-                        <input type="text" class="placeholder" id="weight" name="weight" placeholder="66kg" required>
+                        <input type="text" class="placeholder" id="weight" name="weight" placeholder="66公斤" required>
                         <img class="suffix" src="" alt="dropdown icon">
                     </div>
                     <div class="assistive-text">Oops! Something went wrong.</div>
@@ -208,7 +207,7 @@
                 <!-- Device ID -->
                 <div class="input g-c-3">
                     <label for="d-id" class="label-container">
-                        <p>Device ID</p>
+                        <p>裝置編號</p>
                         <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
                     </label>
                     <div class="input-gp">
@@ -221,160 +220,84 @@
                 <!-- Connection Status -->
                 <div class="input g-c-3 suffix">
                     <label for="connection" class="label-container">
-                        <p>Connection Status</p>
+                        <p>裝置連結</p>
                         <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
                     </label>
                     <div class="input-gp">
-                        <input type="text" class="placeholder" id="connection" name="connection" value="Connected"
+                        <input type="text" class="placeholder" id="connection" name="connection" value="已連結"
                             readonly>
                         <img class="suffix active" src="" alt="dropdown icon">
                     </div>
-                    <div class="assistive-text active">click to reconnect</div>
+                    <div class="assistive-text active">點擊以重新連結</div>
                 </div>
             </div>
             <div class="btn-gp">
                 <div class="btn text-only inactive">
                     <img src="" alt="" class="prefix">
-                    <p class="btn-text">Save</p>
+                    <p class="btn-text">儲存</p>
                 </div>
                 <div class="btn text-only outline" id="discharge">
                     <img src="" alt="" class="prefix">
-                    <p class="btn-text">Discharge</p>
+                    <p class="btn-text">出院確認</p>
                 </div>
             </div>
         </div>
         <div class="main">
             <div class="tab">
-                <h1 class="opt active" style="font-weight: 400;">Heart Rate Analysis Details</h1>
-                <a class="btn frameless" href="patient-analysis.html">
+                <a href="patient-monitor-chi.html" class="opt active opt-1">實時檢測</a>
+                <a href="patient-alert-chi.html" class="opt opt-2">提示設定</a>
+                <a href="patient-analysis-chi.html" class="opt opt-3">分析報表</a>
+                <a href="patient-log-chi.html" class="opt opt-4">病歷</a>
+                <a  class="btn frameless" href="patient-list-chi.html">
                     <img src="" alt="" class="prefix">
-                    <p class="btn-text">Back</p>
+                    <p class="btn-text">返回列表</p>
                 </a>
             </div>
-            <div class="analysis">
-                <div class="ct hr">
-                    <div class="diagram">
-                        <div class="title">2024/7/12</div>
-                        <img src="element/heart-rate.png" alt="">
-                    </div>
-                    <div class="analysis-box">
-                        <div class="data-list">
-                            <div class="data">
-                                <img src="element/hightest.svg" alt="">
-                                <div class="name">Highest</div>
-                                <div class="stat">122</div>
+            <div class="monitor">
+                <div class="pressure">
+                    <div class="title">臥床壓力</div>
+                    <div class="box">
+                        <img src="element/body-pressure.png" alt="">
+                        <div class="bt-box">
+                            <div class="spec col">
+                                <p class="tag">姿勢</p>
+                                <h3>正躺</h3>
                             </div>
-                            <div class="data">
-                                <img src="element/lowest.svg" alt="">
-                                <div class="name">Lowest</div>
-                                <div class="stat">82</div>
+                            <div class="spec col">
+                                <p class="tag">持續時間</p>
+                                <h3>1:23</h3>
                             </div>
-                            <div class="data">
-                                <img src="element/average.svg" alt="">
-                                <div class="name">Avergae</div>
-                                <div class="stat">102</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ct hr">
-                    <div class="diagram">
-                        <div class="title">2024/7/13</div>
-                        <img src="element/heart-rate.png" alt="">
-                    </div>
-                    <div class="analysis-box">
-                        <div class="data-list">
-                            <div class="data">
-                                <img src="element/hightest.svg" alt="">
-                                <div class="name">Highest</div>
-                                <div class="stat">122</div>
-                            </div>
-                            <div class="data">
-                                <img src="element/lowest.svg" alt="">
-                                <div class="name">Lowest</div>
-                                <div class="stat">82</div>
-                            </div>
-                            <div class="data">
-                                <img src="element/average.svg" alt="">
-                                <div class="name">Avergae</div>
-                                <div class="stat">102</div>
+                            <div class="spec row">
+                                <div class="mr high">
+                                    <img src="element/mr-high.svg" alt="">
+                                    <p>12%</p>
+                                </div>
+                                <div class="mr mid">
+                                    <img src="element/mr-mid.svg" alt="">
+                                    <p>28%</p>
+                                </div>
+                                <div class="mr low">
+                                    <img src="element/mr-low.svg" alt="">
+                                    <p>60%</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="ct hr">
-                    <div class="diagram">
-                        <div class="title">2024/7/14</div>
-                        <img src="element/heart-rate.png" alt="">
-                    </div>
-                    <div class="analysis-box">
-                        <div class="data-list">
-                            <div class="data">
-                                <img src="element/hightest.svg" alt="">
-                                <div class="name">Highest</div>
-                                <div class="stat">122</div>
-                            </div>
-                            <div class="data">
-                                <img src="element/lowest.svg" alt="">
-                                <div class="name">Lowest</div>
-                                <div class="stat">82</div>
-                            </div>
-                            <div class="data">
-                                <img src="element/average.svg" alt="">
-                                <div class="name">Avergae</div>
-                                <div class="stat">102</div>
-                            </div>
-                        </div>
+                <div class="h-rate">
+                    <div class="title">心率</div>
+                    <img src="element/heart-rate.png" alt="">
+                    <div class="spec">
+                        <div>102</div>
+                        <div class="tag">下/分鐘</div>
                     </div>
                 </div>
-                <div class="ct hr">
-                    <div class="diagram">
-                        <div class="title">2024/7/15</div>
-                        <img src="element/heart-rate.png" alt="">
-                    </div>
-                    <div class="analysis-box">
-                        <div class="data-list">
-                            <div class="data">
-                                <img src="element/hightest.svg" alt="">
-                                <div class="name">Highest</div>
-                                <div class="stat">122</div>
-                            </div>
-                            <div class="data">
-                                <img src="element/lowest.svg" alt="">
-                                <div class="name">Lowest</div>
-                                <div class="stat">82</div>
-                            </div>
-                            <div class="data">
-                                <img src="element/average.svg" alt="">
-                                <div class="name">Avergae</div>
-                                <div class="stat">102</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ct hr">
-                    <div class="diagram">
-                        <div class="title">2024/7/16</div>
-                        <img src="element/heart-rate.png" alt="">
-                    </div>
-                    <div class="analysis-box">
-                        <div class="data-list">
-                            <div class="data">
-                                <img src="element/hightest.svg" alt="">
-                                <div class="name">Highest</div>
-                                <div class="stat">122</div>
-                            </div>
-                            <div class="data">
-                                <img src="element/lowest.svg" alt="">
-                                <div class="name">Lowest</div>
-                                <div class="stat">82</div>
-                            </div>
-                            <div class="data">
-                                <img src="element/average.svg" alt="">
-                                <div class="name">Avergae</div>
-                                <div class="stat">102</div>
-                            </div>
-                        </div>
+                <div class="respiration">
+                    <div class="title">呼吸率</div>
+                    <img src="element/respiration.png" alt="">
+                    <div class="spec">
+                        <div>31</div>
+                        <div class="tag">下/分鐘</div>
                     </div>
                 </div>
             </div>
@@ -382,7 +305,7 @@
     </div>
     <footer>
         <img src="element/uneo-logo.png" alt="">
-        <div class="cr">Copyright ©2024 Uneo Inc. All rights reserved.</div>
+        <div class="cr">版權所有 ©2024 Uneo Inc. </div>
         <div class="date">2024-09-18</div>
         <div class="time">08:08</div>
     </footer>
@@ -391,16 +314,16 @@
     <div class="overlay discharge">
         <div class="warn">
             <img class="icon" src="element/alert-box.svg" alt="alert box">
-            <h1 class="title">Confirm to discharge the patient?</h1>
-            <p class="desc">you will need to reconnect to a bed to obtain live data.</p>
+            <h1 class="title">病人已經出院？</h1>
+            <p class="desc">確認會失去實時監測的數據</p>
             <div class="btn-gp">
                 <a class="btn text-only pri" href="account-list.html">
                     <img src="" alt="" class="prefix">
-                    <p class="btn-text pri-text">Discharge</p>
+                    <p class="btn-text pri-text">確認</p>
                 </a>
                 <a class="btn text-only outline sec" href="account-list.html">
                     <img src="" alt="" class="prefix">
-                    <p class="btn-text sec-text">Cancel</p>
+                    <p class="btn-text sec-text">取消</p>
                 </a>
             </div>
         </div>
@@ -408,16 +331,16 @@
     <div class="overlay logout">
         <div class="warn">
             <img class="icon" src="element/logout-active.svg" alt="logout icon">
-            <h1 class="title">Logout?</h1>
-            <p class="desc">Confirm to logout.</p>
+            <h1 class="title">是否要登出</h1>
+            <p class="desc">請確認</p>
             <div class="btn-gp">
                 <a class="btn text-only pri" href="login.html">
                     <img src="" alt="" class="prefix">
-                    <p class="btn-text pri-text">Confirm</p>
+                    <p class="btn-text pri-text">登出</p>
                 </a>
                 <a class="btn text-only outline sec" href="#">
                     <img src="" alt="" class="prefix">
-                    <p class="btn-text sec-text">Cancel</p>
+                    <p class="btn-text sec-text">取消</p>
                 </a>
             </div>
         </div>
@@ -425,19 +348,19 @@
     <div class="overlay newpwConfirm">
         <div class="warn">
             <img class="icon" src="element/check-active.svg" alt="tick icon">
-            <h1 class="title">New password has been updated</h1>
-            <p class="desc">remember to use the new password when you login next time.</p>
+            <h1 class="title">密碼已經更新</h1>
+            <p class="desc">下次登入時請記得使用新密碼</p>
             <div class="btn-gp">
-                <a class="btn text-only pri" href="#">
+                <a class="btn text-only pri" href="account.html">
                     <img src="" alt="" class="prefix">
-                    <p class="btn-text pri-text">Okay</p>
+                    <p class="btn-text pri-text">好的</p>
                 </a>
             </div>
         </div>
     </div>
     <div class="changePassword">
         <div class="window">
-            <div class="title">New Password</div>
+            <div class="title">新密碼</div>
             <div class="subtitle"></div>
             <img src="element/close.svg" alt="" class="close">
             <form action="">
@@ -445,50 +368,50 @@
                     <!-- Current Password -->
                     <div class="input g-c-6 suffix">
                         <label for="cpw" class="label-container">
-                            <p>Enter your current password</p>
+                            <p>輸入目前的密碼</p>
                             <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
                         </label>
                         <div class="input-gp">
-                            <input type="password" class="placeholder" name="cpw" placeholder="Enter here"
+                            <input type="password" class="placeholder" name="cpw" placeholder="請輸入"
                                 required>
                             <img class="suffix hide" src="element/eye-off.svg" alt="eye icon">
                         </div>
-                        <div class="assistive-text active">Must include one upper and one lower case alphabet.</div>
+                        <div class="assistive-text">須包含一個大寫及一個數字元</div>
                     </div>
                     <!-- New Password -->
                     <div class="input g-c-6 suffix">
                         <label for="npw" class="label-container">
-                            <p>Enter your new password</p>
+                            <p>建立你的新密碼</p>
                             <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
                         </label>
                         <div class="input-gp">
-                            <input type="password" class="placeholder" name="npw" placeholder="Enter here"
+                            <input type="password" class="placeholder" name="npw" placeholder="請輸入"
                                 required>
                             <img class="suffix hide" src="element/eye-off.svg" alt="eye icon">
                         </div>
-                        <div class="assistive-text active">Must include one upper and one lower case alphabet.</div>
+                        <div class="assistive-text active">須包含一個大寫及一個數字元</div>
                     </div>
                     <!-- Confirm Password -->
                     <div class="input g-c-6 suffix">
                         <label for="cnpw" class="label-container">
-                            <p>Confirm your new password</p>
+                            <p>確認你的新密碼</p>
                             <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
                         </label>
                         <div class="input-gp">
-                            <input type="password" class="placeholder" name="cnpw" placeholder="Enter here" required>
+                            <input type="password" class="placeholder" name="cnpw" placeholder="請輸入" required>
                             <img class="suffix hide" src="element/eye-off.svg" alt="eye icon">
                         </div>
-                        <div class="assistive-text active">Must include one upper and one lower case alphabet.</div>
+                        <div class="assistive-text active">須包含一個大寫及一個數字元</div>
                     </div>
                 </div>
                 <div class="btn-gp">
                     <div class="btn text-only pri">
                         <img src="" alt="" class="prefix">
-                        <p class="btn-text pri-text">Confirm</p>
+                        <p class="btn-text pri-text">確認</p>
                     </div>
                     <div class="btn text-only outline sec">
                         <img src="" alt="" class="prefix">
-                        <p class="btn-text sec-text">Back</p>
+                        <p class="btn-text sec-text">取消</p>
                     </div>
                 </div>
             </form>
@@ -500,19 +423,19 @@
         <img src="element/uext.svg" alt="" class="logo">
         <div class="option-list">
             <div class="list">
-                <a href="index.html" class="option">Home</a>
-                <a href="patient-list.html" class="option">Patient</a>
-                <a href="device-list.html" class="option">Device</a>
-                <a href="account-list.html" class="option">Account</a>
+                <a href="index-chi.html" class="option">首頁</a>
+                <a href="patient-list-chi.html" class="option">病人管理</a>
+                <a href="device-list-chi.html" class="option">裝置管理</a>
+                <a href="account-list-chi.html" class="option">帳戶管理</a>
             </div>
             <div class="list">
-                <a href="account.html" class="option">Profile Setting</a>
-                <a class="option" id="changePassword-3">Change Password</a>
+                <a href="account-chi.html" class="option">我的帳戶</a>
+                <a class="option" id="changePassword-3">更改密碼</a>
             </div>
         </div>
         <div class="btn frameless" id="logout-btn">
             <img src="" alt="" class="prefix">
-            <p class="btn-text">Logout</p>
+            <p class="btn-text">登出</p>
         </div>
     </div>
     <div class="sideMenu-overlay"></div>
@@ -523,4 +446,5 @@
     <script src="js/patient.js"></script>
     <script src="js/overlay.js"></script>
 </body>
+
 </html>
