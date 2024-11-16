@@ -63,6 +63,24 @@
     flex-direction: column;
 }
 
+.langSwitch{
+    display: flex;
+    gap: 20px;  
+    position: absolute;
+    top: 48px;
+    right: 48px;
+}
+
+.langSwitch .chi,.langSwitch .eng{
+    color: rgb(156, 156, 156);
+    font-size: 24px; 
+}
+
+.langSwitch .chi.active ,.langSwitch .eng.active{
+    color: rgb(32, 32, 32);
+    font-weight: 500;
+}
+
 
 @media (max-width:1920px) {
     .login{
@@ -91,5 +109,13 @@
     }
     .login .st3 .btn-gp{
         margin-top: 48px;
+    }
+    .langSwitch{
+        gap: 12px;
+        top: 24px;
+        right: 24px;
+    }
+    .langSwitch .chi,.langSwitch .eng{
+        font-size: 16px; 
     }
 }
