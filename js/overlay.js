@@ -166,10 +166,11 @@ $(document).ready(function () {
 
 
     // UNSAVED LOG ALERT
-    $(".editLog .sec").click(function (e) { 
+    $(".editLog .sec, .addLog .sec").click(function (e) { 
         e.preventDefault();
         // Hide Log Edit
         $(".editLog").removeClass("active");
+        $(".addLog").removeClass("active");
         // Open Overlay
         $(".unsavedLog").addClass("active");
         
@@ -183,6 +184,27 @@ $(document).ready(function () {
         $(".unsavedLog .sec").click(function (e) { 
             e.preventDefault();
             $(".editLog").addClass("active")
+            $(".unsavedLog").removeClass("active");
+        });
+    });
+
+    // UNSAVED LOG ALERT
+    $(".addLog .sec").click(function (e) { 
+        e.preventDefault();
+        // Hide addLog
+        $(".addLog").removeClass("active");
+        // Open Overlay
+        $(".unsavedLog").addClass("active");
+        
+        // Close Overlay
+        $(".unsavedLog .pri").click(function (e) { 
+            e.preventDefault();
+            $(".unsavedLog").removeClass("active");
+        });
+        // Back to Log Edit
+        $(".unsavedLog .sec").click(function (e) { 
+            e.preventDefault();
+            $(".addLog").addClass("active")
             $(".unsavedLog").removeClass("active");
         });
     });
