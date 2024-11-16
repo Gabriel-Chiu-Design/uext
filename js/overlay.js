@@ -189,7 +189,7 @@ $(document).ready(function () {
 
 
     // ADD PATIENT OVERLAY WINDOW
-    $("#addPatient").click(function (e) { 
+    $("#addPatient, .bed.vacant").click(function (e) { 
         e.preventDefault();
         // Open Overlay
         $(".addPatient").css("display", "block");

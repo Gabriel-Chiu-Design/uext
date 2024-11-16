@@ -1287,6 +1287,281 @@
             </form>
         </div>
     </div>
+    <div class="addPatient chi">
+        <div class="window">
+            <a href="patient-list-chi.html"><img src="element/close.svg" alt="close icon" class="close"></a>
+            <img src="" alt="" class="icon">
+            <div class="title">新增病人</div>
+            <div class="tab-list">
+                <a href="#" class="tab active tab-1">病人資料</a>
+                <a href="#" class="tab tab-2">床位資訊</a>
+            </div>
+                <!-- Stage 1 -->
+                <form action="">
+                    <div class="grid st1">
+                        <!-- Name -->
+                        <div class="input g-c-6">
+                            <label for="name" class="label-container">
+                                <p>姓名</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="name" name="name" placeholder="請輸入"
+                                    required>
+                                <img class="suffix" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">不好意思，請檢查錯誤！</div>
+                        </div>
+                        <!-- Height -->
+                        <div class="input g-c-3">
+                            <label for="height" class="label-container">
+                                <p>身高</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="height" name="height" placeholder="請輸入" required>
+                                <img class="suffix" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">不好意思，請檢查錯誤！</div>
+                        </div>
+                        <!-- Weight -->
+                        <div class="input g-c-3">
+                            <label for="weight" class="label-container">
+                                <p>體重</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="weight" name="weight" placeholder="請輸入" required>
+                                <img class="suffix" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">不好意思，請檢查錯誤！</div>
+                        </div>
+                        <!-- Sex -->
+                        <div class="input g-c-3">
+                            <label for="sex" class="label-container">
+                                <p>性別</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="sex" name="sex" placeholder="男" required>
+                                <img class="suffix" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">不好意思，請檢查錯誤！</div>
+                        </div>
+                        <!-- DOB -->
+                        <div class="input g-c-3">
+                            <label for="dob" class="label-container">
+                                <p>出生日期</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="date" class="placeholder" id="sex" name="dob" placeholder="請輸入" required>
+                                <img class="suffix" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">不好意思，請檢查錯誤！</div>
+                        </div>
+                    </div>
+                    <div class="btn-gp st1">
+                        <div class="btn text-only pri">
+                            <img src="" alt="" class="prefix">
+                            <p class="btn-text pri-text">繼續</p>
+                        </div>
+                        <div class="btn text-only outline sec">
+                            <img src="" alt="" class="prefix">
+                            <p class="btn-text sec-text">取消</p>
+                        </div>
+                    </div>
+                </form>
+                <!-- Stage 2 -->
+                <form action="">
+                    <div class="grid st2">
+                        <!-- Building -->
+                        <div class="input dropdown building suffix g-c-3">
+                            <label for="building" class="label-container">
+                                <p>大樓</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="building" placeholder="請選擇" readonly>
+                                <img class="suffix active" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">this is a line of assistive text</div>
+                            <div class="list">
+                                <div class="item opt1">Building 1</div>
+                                <div class="item opt2">Building 2</div>
+                                <div class="item opt3">Building 3</div>
+                                <div class="item opt4">Building 4</div>
+                                <div class="item opt5">Building 5</div>
+                            </div>
+                        </div>
+                        <!-- Floor -->
+                        <div class="input dropdown floor suffix g-c-3">
+                            <label for="floor" class="label-container">
+                                <p>樓層</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="floor" placeholder="請選擇" readonly>
+                                <img class="suffix active" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">this is a line of assistive text</div>
+                            <div class="list">
+                                <div class="item opt1">1F</div>
+                                <div class="item opt2">2F</div>
+                                <div class="item opt3">3F</div>
+                                <div class="item opt4">4F</div>
+                                <div class="item opt5">5F</div>
+                                <div class="item opt6">6F</div>
+                                <div class="item opt7">7F</div>
+                            </div>
+                        </div>
+                        <!-- Section -->
+                        <div class="input dropdown section suffix g-c-3">
+                            <label for="section" class="label-container">
+                                <p>區域</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="section" placeholder="請選擇" readonly>
+                                <img class="suffix active" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">this is a line of assistive text</div>
+                            <div class="list">
+                                <div class="item opt1">Zone A</div>
+                                <div class="item opt2">Zone B</div>
+                                <div class="item opt3">Zone C</div>
+                                <div class="item opt4">Zone D</div>
+                            </div>
+                        </div>
+                        <!-- Bed -->
+                        <div class="input g-c-3">
+                            <label for="bed" class="label-container">
+                                <p>床號</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="bed" placeholder="請輸入"
+                                    required>
+                                <img class="suffix" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">不好意思，請檢查錯誤！</div>
+                        </div>
+                    </div>
+                    <div class="btn-gp st2">
+                        <div class="btn text-only pri">
+                            <img src="" alt="" class="prefix">
+                            <p class="btn-text pri-text">繼續</p>
+                        </div>
+                        <div class="btn text-only outline sec">
+                            <img src="" alt="" class="prefix">
+                            <p class="btn-text sec-text">返回</p>
+                        </div>
+                    </div>
+                </form>
+                <!-- Stage 3 -->
+                <div class="btn-gp st3">
+                    <div class="btn text-only pri">
+                        <img src="" alt="" class="prefix">
+                        <p class="btn-text pri-text">好的</p>
+                    </div>
+                    <div class="btn text-only outline sec">
+                        <img src="" alt="" class="prefix">
+                        <p class="btn-text sec-text">連結裝置</p>
+                    </div>
+                </div>
+                <!-- Stage 4 -->
+                <form action="">
+                    <div class="grid st4-1">
+                        <div class="input dropdown device suffix g-c-6">
+                            <label for="building" class="label-container">
+                                <p>裝置編號</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="device" placeholder="請選擇" readonly>
+                                <img class="suffix active" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">this is a line of assistive text</div>
+                            <div class="list">
+                                <div class="item opt1">ADPS-003078-S</div>
+                                <div class="item opt2">ADPS-003079-S</div>
+                                <div class="item opt3">ADPS-003080-S</div>
+                                <div class="item opt4">ADPS-003081-S</div>
+                                <div class="item opt5">ADPS-003082-S</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-gp st4-1">
+                        <div class="btn text-only pri">
+                            <img src="" alt="" class="prefix">
+                            <p class="btn-text pri-text">確認</p>
+                        </div>
+                        <div class="btn text-only outline sec">
+                            <img src="" alt="" class="prefix">
+                            <p class="btn-text sec-text">登陸新裝置並連結</p>
+                        </div>
+                    </div>
+                    <div class="grid st4-2">
+                        <div class="input g-c-3">
+                            <label for="d-id" class="label-container">
+                                <p>裝置編號</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="d-id" placeholder="請輸入">
+                                <img class="suffix active" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">this is a line of assistive text</div>
+                        </div>
+                        <div class="input g-c-3">
+                            <label for="mac" class="label-container">
+                                <p>取存控制位置</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="mac" placeholder="請輸入">
+                                <img class="suffix active" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">this is a line of assistive text</div>
+                        </div>
+                        <div class="input g-c-3">
+                            <label for="d-ip" class="label-container">
+                                <p>裝置地址</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="d-ip" placeholder="請輸入">
+                                <img class="suffix active" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">this is a line of assistive text</div>
+                        </div>
+                    </div>
+                    <div class="btn-gp st4-2">
+                        <div class="btn text-only pri">
+                            <img src="" alt="" class="prefix">
+                            <p class="btn-text pri-text">確認</p>
+                        </div>
+                        <div class="btn text-only outline sec">
+                            <img src="" alt="" class="prefix">
+                            <p class="btn-text sec-text">連結現有裝置</p>
+                        </div>
+                    </div>
+                </form>
+                <!-- Stage 5 -->
+                <div class="connecting">
+                    <img src="element/connecting.gif" alt="connecting">
+                    <p>連結中...</p>
+                </div>
+                <!-- Stage 6 -->
+                <div class="btn-gp st6">
+                    <a href="patient-chi.html" class="btn text-only pri">
+                        <img src="" alt="" class="prefix">
+                        <p class="btn-text pri-text">好的</p>
+                    </a>
+                </div>
+
+            </div>  
+    </div>
 
     <!-- Side Menu -->
     <div class="sideMenu chi">

@@ -339,7 +339,7 @@
                         </div>
                         <img class="add" src="element/add.svg" alt="add icon">
                     </a>
-                    <a href="patient-monitor.html" class="bed vacant">
+                    <a href="#" class="bed vacant">
                         <div class="b-num">1005</div>
                         <div class="name">Click to add patient</div>
                         <div class="tag">
@@ -1289,6 +1289,280 @@
                 </div>
             </form>
         </div>
+    </div>
+    <div class="addPatient">
+        <div class="window">
+            <a href="patient-list.html"><img src="element/close.svg" alt="close icon" class="close"></a>
+            <img src="" alt="" class="icon">
+            <div class="title">Add Patient</div>
+            <div class="tab-list">
+                <a href="#" class="tab active tab-1">Patient Profile</a>
+                <a href="#" class="tab tab-2">Bed Location</a>
+            </div>
+                <!-- Stage 1 -->
+                <form action="">
+                    <div class="grid st1">
+                        <!-- Name -->
+                        <div class="input g-c-6">
+                            <label for="name" class="label-container">
+                                <p>Name</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="name" name="name" placeholder="Enter here"
+                                    required>
+                                <img class="suffix" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">Oops! Something went wrong.</div>
+                        </div>
+                        <!-- Height -->
+                        <div class="input g-c-3">
+                            <label for="height" class="label-container">
+                                <p>Height</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="height" name="height" placeholder="Enter here" required>
+                                <img class="suffix" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">Oops! Something went wrong.</div>
+                        </div>
+                        <!-- Weight -->
+                        <div class="input g-c-3">
+                            <label for="weight" class="label-container">
+                                <p>Weight</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="weight" name="weight" placeholder="Enter here" required>
+                                <img class="suffix" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">Oops! Something went wrong.</div>
+                        </div>
+                        <!-- Sex -->
+                        <div class="input g-c-3">
+                            <label for="sex" class="label-container">
+                                <p>Sex</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="sex" name="sex" placeholder="Male" required>
+                                <img class="suffix" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">Oops! Something went wrong.</div>
+                        </div>
+                        <!-- DOB -->
+                        <div class="input g-c-3">
+                            <label for="dob" class="label-container">
+                                <p>Date of Birth</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="date" class="placeholder" id="sex" name="dob" placeholder="Enter here" required>
+                                <img class="suffix" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">Oops! Something went wrong.</div>
+                        </div>
+                    </div>
+                    <div class="btn-gp st1">
+                        <div class="btn text-only pri">
+                            <img src="" alt="" class="prefix">
+                            <p class="btn-text pri-text">Continue</p>
+                        </div>
+                        <div class="btn text-only outline sec">
+                            <img src="" alt="" class="prefix">
+                            <p class="btn-text sec-text">Cancel</p>
+                        </div>
+                    </div>
+                </form>
+                <!-- Stage 2 -->
+                <form action="">
+                    <div class="grid st2">
+                        <!-- Building -->
+                        <div class="input dropdown building suffix g-c-3">
+                            <label for="building" class="label-container">
+                                <p>Building</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="building" placeholder="Please Select" readonly>
+                                <img class="suffix active" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">this is a line of assistive text</div>
+                            <div class="list">
+                                <div class="item opt1">Building 1</div>
+                                <div class="item opt2">Building 2</div>
+                                <div class="item opt3">Building 3</div>
+                                <div class="item opt4">Building 4</div>
+                                <div class="item opt5">Building 5</div>
+                            </div>
+                        </div>
+                        <!-- Floor -->
+                        <div class="input dropdown floor suffix g-c-3">
+                            <label for="floor" class="label-container">
+                                <p>Floor</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="floor" placeholder="Please Select" readonly>
+                                <img class="suffix active" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">this is a line of assistive text</div>
+                            <div class="list">
+                                <div class="item opt1">1F</div>
+                                <div class="item opt2">2F</div>
+                                <div class="item opt3">3F</div>
+                                <div class="item opt4">4F</div>
+                                <div class="item opt5">5F</div>
+                                <div class="item opt6">6F</div>
+                                <div class="item opt7">7F</div>
+                            </div>
+                        </div>
+                        <!-- Section -->
+                        <div class="input dropdown section suffix g-c-3">
+                            <label for="section" class="label-container">
+                                <p>Section</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="section" placeholder="Please Select" readonly>
+                                <img class="suffix active" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">this is a line of assistive text</div>
+                            <div class="list">
+                                <div class="item opt1">Zone A</div>
+                                <div class="item opt2">Zone B</div>
+                                <div class="item opt3">Zone C</div>
+                                <div class="item opt4">Zone D</div>
+                            </div>
+                        </div>
+                        <!-- Bed -->
+                        <div class="input g-c-3">
+                            <label for="bed" class="label-container">
+                                <p>Bed</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="bed" placeholder="Enter here"
+                                    required>
+                                <img class="suffix" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">Oops! Something went wrong.</div>
+                        </div>
+                    </div>
+                    <div class="btn-gp st2">
+                        <div class="btn text-only pri">
+                            <img src="" alt="" class="prefix">
+                            <p class="btn-text pri-text">Continue</p>
+                        </div>
+                        <div class="btn text-only outline sec">
+                            <img src="" alt="" class="prefix">
+                            <p class="btn-text sec-text">Back</p>
+                        </div>
+                    </div>
+                </form>
+                <!-- Stage 3 -->
+                <div class="btn-gp st3">
+                    <div class="btn text-only pri">
+                        <img src="" alt="" class="prefix">
+                        <p class="btn-text pri-text">Okay</p>
+                    </div>
+                    <div class="btn text-only outline sec">
+                        <img src="" alt="" class="prefix">
+                        <p class="btn-text sec-text">Link a device</p>
+                    </div>
+                </div>
+                <!-- Stage 4 -->
+                <form action="">
+                    <div class="grid st4-1">
+                        <div class="input dropdown device suffix g-c-6">
+                            <label for="building" class="label-container">
+                                <p>Device ID</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="device" placeholder="Please Select" readonly>
+                                <img class="suffix active" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">this is a line of assistive text</div>
+                            <div class="list">
+                                <div class="item opt1">ADPS-003078-S</div>
+                                <div class="item opt2">ADPS-003079-S</div>
+                                <div class="item opt3">ADPS-003080-S</div>
+                                <div class="item opt4">ADPS-003081-S</div>
+                                <div class="item opt5">ADPS-003082-S</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-gp st4-1">
+                        <div class="btn text-only pri">
+                            <img src="" alt="" class="prefix">
+                            <p class="btn-text pri-text">Confirm</p>
+                        </div>
+                        <div class="btn text-only outline sec">
+                            <img src="" alt="" class="prefix">
+                            <p class="btn-text sec-text">Link with new device</p>
+                        </div>
+                    </div>
+                    <div class="grid st4-2">
+                        <div class="input g-c-3">
+                            <label for="d-id" class="label-container">
+                                <p>Device ID</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="d-id" placeholder="Please Enter">
+                                <img class="suffix active" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">this is a line of assistive text</div>
+                        </div>
+                        <div class="input g-c-3">
+                            <label for="mac" class="label-container">
+                                <p>MAC</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="mac" placeholder="Please Enter">
+                                <img class="suffix active" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">this is a line of assistive text</div>
+                        </div>
+                        <div class="input g-c-3">
+                            <label for="d-ip" class="label-container">
+                                <p>Device IP</p>
+                                <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                            </label>
+                            <div class="input-gp">
+                                <input type="text" class="placeholder" id="d-ip" placeholder="Please Enter">
+                                <img class="suffix active" src="" alt="dropdown icon">
+                            </div>
+                            <div class="assistive-text">this is a line of assistive text</div>
+                        </div>
+                    </div>
+                    <div class="btn-gp st4-2">
+                        <div class="btn text-only pri">
+                            <img src="" alt="" class="prefix">
+                            <p class="btn-text pri-text">Confirm</p>
+                        </div>
+                        <div class="btn text-only outline sec">
+                            <img src="" alt="" class="prefix">
+                            <p class="btn-text sec-text">Link with registered device</p>
+                        </div>
+                    </div>
+                </form>
+                <!-- Stage 5 -->
+                <div class="connecting">
+                    <img src="element/connecting.gif" alt="connecting">
+                    <p>Connecting...</p>
+                </div>
+                <!-- Stage 6 -->
+                <div class="btn-gp st6">
+                    <a href="patient.html" class="btn text-only pri">
+                        <img src="" alt="" class="prefix">
+                        <p class="btn-text pri-text">Okay</p>
+                    </a>
+                </div>
+            </div>  
     </div>
 
     <!-- Side Menu -->
