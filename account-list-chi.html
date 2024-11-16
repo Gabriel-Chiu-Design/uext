@@ -485,12 +485,12 @@
     <div class="overlay alert-new">
         <div class="warn">
             <img class="icon" src="element/alert-box.svg" alt="aler box in gray">
-            <h1 class="title">Exit Bed Alert</h1>
-            <p class="desc">Patient at 7/F, Zone A, Bed 113 left his bed, please follow up as soon as possible.</p>
+            <h1 class="title">離床警示通知</h1>
+            <p class="desc">位於七樓、區域A、床號113的病人離床，請盡快跟進</p>
             <div class="btn-gp">
                 <a class="btn text-only pri" href="#">
                     <img src="" alt="" class="prefix">
-                    <p class="btn-text pri-text">Got it</p>
+                    <p class="btn-text pri-text">好的</p>
                 </a>
             </div>
         </div>
@@ -498,16 +498,16 @@
     <div class="overlay inp-ea">
         <div class="warn">
             <img class="icon" src="element/alert-box.svg" alt="alert box icon">
-            <h1 class="title">Problem resolved?</h1>
-            <p class="desc">Patient at 7/F, Zone A, Bed 113 left his bed, you may resolve the alert if the situation has been settled.</p>
+            <h1 class="title">問題已解決？</h1>
+            <p class="desc">位於七樓、區域A、床號113的病人離床，請盡快跟進，如問題已解決可以解除警示</p>
             <div class="btn-gp">
                 <a class="btn text-only pri" href="#">
                     <img src="" alt="" class="prefix">
-                    <p class="btn-text pri-text">Resolve the alert</p>
+                    <p class="btn-text pri-text">解除警示</p>
                 </a>
                 <a class="btn text-only outline sec" href="#">
                     <img src="" alt="" class="prefix">
-                    <p class="btn-text sec-text">Cancel</p>
+                    <p class="btn-text sec-text">取消</p>
                 </a>
             </div>
         </div>
@@ -515,16 +515,16 @@
     <div class="overlay log">
         <div class="warn">
             <img class="icon" src="element/note.svg" alt="note icon">
-            <h1 class="title">Leave a log record?</h1>
-            <p class="desc">Confirm to make a written record of what happened.</p>
+            <h1 class="title">是否新增離床紀錄至病歷？</h1>
+            <p class="desc">請確認</p>
             <div class="btn-gp">
                 <a class="btn text-only pri" href="#">
                     <img src="" alt="" class="prefix">
-                    <p class="btn-text pri-text">Yes</p>
+                    <p class="btn-text pri-text">新增</p>
                 </a>
                 <a class="btn text-only outline sec" href="#">
                     <img src="" alt="" class="prefix">
-                    <p class="btn-text sec-text">No</p>
+                    <p class="btn-text sec-text">否</p>
                 </a>
             </div>
         </div>
@@ -532,99 +532,97 @@
     <div class="addLog">
         <div class="window">
             <a href="patient-log.html"><img src="element/close.svg" alt="close icon" class="close"></a>
-            <div class="title">New Log Records</div>
-            <div class="subtitle">(patient name) @7/F, Zone A, Bed 113</div>
-            <form action="">
-                <div class="grid">
-                    <div class="input g-c-6">
-                        <label for="logTitle" class="label-container">
-                            <p>Log Title</p>
-                            <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
-                        </label>
-                        <div class="input-gp">
-                            <input type="text" class="placeholder" id="logTitle" placeholder="Please Enter">
-                            <img class="suffix active" src="" alt="dropdown icon">
-                        </div>
-                        <div class="assistive-text">this is a line of assistive text</div>
+            <div class="title">新增病歷紀錄</div>
+            <div class="subtitle">(病人名稱) @七樓、區域A、床號113</div>
+            <div class="grid">
+                <div class="input g-c-6">
+                    <label for="logTitle" class="label-container">
+                        <p>標題</p>
+                        <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                    </label>
+                    <div class="input-gp">
+                        <input type="text" class="placeholder" id="logTitle" placeholder="請輸入">
+                        <img class="suffix active" src="" alt="dropdown icon">
                     </div>
-                    <div class="input g-c-6">
-                        <label for="logDetail" class="label-container">
-                            <p>Log Details</p>
-                            <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
-                        </label>
-                        <div class="input-gp">
-                            <textarea class="placeholder" id="logDetail" placeholder="Please Enter"></textarea>
-                            <img class="suffix active" src="" alt="dropdown icon">
-                        </div>
-                        <div class="assistive-text">this is a line of assistive text</div>
+                    <div class="assistive-text">this is a line of assistive text</div>
+                </div>
+                <div class="input g-c-6">
+                    <label for="logDetail" class="label-container">
+                        <p>詳請</p>
+                        <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
+                    </label>
+                    <div class="input-gp">
+                        <textarea class="placeholder" id="logDetail" placeholder="請輸入"></textarea>
+                        <img class="suffix active" src="" alt="dropdown icon">
                     </div>
+                    <div class="assistive-text">this is a line of assistive text</div>
                 </div>
-                <div class="btn-gp">
-                    <a class="btn text-only pri" href="patient-log.html">
-                        <img src="" alt="" class="prefix">
-                        <p class="btn-text pri-text">Create Log</p>
-                    </a>
-                    <a class="btn text-only outline sec" href="patient-log.html">
-                        <img src="" alt="" class="prefix">
-                        <p class="btn-text sec-text">Cancel</p>
-                    </a>
-                </div>
-            </form>
+            </div>
+            <div class="btn-gp">
+                <a class="btn text-only pri" href="patient-log-chi.html">
+                    <img src="" alt="" class="prefix">
+                    <p class="btn-text pri-text">創建紀錄</p>
+                </a>
+                <a class="btn text-only outline sec" href="patient-log-chi.html">
+                    <img src="" alt="" class="prefix">
+                    <p class="btn-text sec-text">取消</p>
+                </a>
+            </div>
         </div>
     </div>
     <div class="addUser">
         <div class="window">
-            <div class="title">Create a New User</div>
-            <div class="subtitle">Fill in your profile information</div>
-            <a href="account-list.html"><img src="element/close.svg" alt="close btn" class="close"></a>
+            <div class="title">新增用戶</div>
+            <div class="subtitle">填寫基本用戶資料</div>
+            <a href="account-list-chi.html"><img src="element/close.svg" alt="close btn" class="close"></a>
             <form action="">
                 <div class="grid st-1 active">
                     <!-- Username -->
                     <div class="input g-c-6">
                         <label for="username" class="label-container">
-                            <p>Name</p>
+                            <p>名稱</p>
                             <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
                         </label>
                         <div class="input-gp">
-                            <input type="text" class="placeholder" name="username" placeholder="Enter here"
+                            <input type="text" class="placeholder" name="username" placeholder="請輸入"
                                 required>
                             <img class="suffix" src="" alt="dropdown icon">
                         </div>
-                        <div class="assistive-text">Oops! Something went wrong.</div>
+                        <div class="assistive-text">不好意思，請檢查錯誤！</div>
                     </div>
                     <!-- Email -->
                     <div class="input g-c-6">
                         <label for="email" class="label-container">
-                            <p>Email</p>
+                            <p>電郵</p>
                             <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
                         </label>
                         <div class="input-gp">
-                            <input type="text" class="placeholder" name="email" placeholder="Enter here" required>
+                            <input type="text" class="placeholder" name="email" placeholder="請輸入" required>
                             <img class="suffix" src="" alt="dropdown icon">
                         </div>
-                        <div class="assistive-text">Oops! Something went wrong.</div>
+                        <div class="assistive-text">不好意思，請檢查錯誤！</div>
                     </div>
                     <!-- Phone -->
                     <div class="input g-c-6">
                         <label for="phone" class="label-container">
-                            <p>Phone Number</p>
+                            <p>電話</p>
                             <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
                         </label>
                         <div class="input-gp">
-                            <input type="text" class="placeholder" name="phone" placeholder="Enter here" required>
+                            <input type="text" class="placeholder" name="phone" placeholder="請輸入" required>
                             <img class="suffix" src="" alt="dropdown icon">
                         </div>
-                        <div class="assistive-text">Oops! Something went wrong.</div>
+                        <div class="assistive-text">不好意思，請檢查錯誤！</div>
                     </div>
                 </div>
                 <div class="btn-gp st-1 active">
                     <div class="btn text-only pri">
                         <img src="" alt="" class="prefix">
-                        <p class="btn-text pri-text">Continue</p>
+                        <p class="btn-text pri-text">繼續</p>
                     </div>
                     <div class="btn text-only outline sec">
                         <img src="" alt="" class="prefix">
-                        <p class="btn-text sec-text">Cancel</p>
+                        <p class="btn-text sec-text">取消</p>
                     </div>
                 </div>
             </form>
@@ -633,37 +631,37 @@
                     <!-- Password -->
                     <div class="input g-c-6 suffix">
                         <label for="pw" class="label-container">
-                            <p>Password</p>
+                            <p>建立密碼</p>
                             <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
                         </label>
                         <div class="input-gp">
-                            <input type="password" class="placeholder" name="pw" placeholder="Enter here"
+                            <input type="password" class="placeholder" name="pw" placeholder="請輸入"
                                 required>
                             <img class="suffix hide" src="element/eye-off.svg" alt="eye icon">
                         </div>
-                        <div class="assistive-text active">Must include one upper and one lower case alphabet.</div>
+                        <div class="assistive-text active">須包含一個大寫及一個數字元</div>
                     </div>
                     <!-- Confirm Password -->
                     <div class="input g-c-6 suffix">
                         <label for="cpw" class="label-container">
-                            <p>Confirm your password</p>
+                            <p>確認密碼</p>
                             <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
                         </label>
                         <div class="input-gp">
-                            <input type="password" class="placeholder" name="cpw" placeholder="Enter here" required>
+                            <input type="password" class="placeholder" name="cpw" placeholder="請輸入" required>
                             <img class="suffix hide" src="element/eye-off.svg" alt="eye icon">
                         </div>
-                        <div class="assistive-text active">Must include one upper and one lower case alphabet.</div>
+                        <div class="assistive-text active">須包含一個大寫及一個數字元</div>
                     </div>
                 </div>
                 <div class="btn-gp st-2">
                     <div class="btn text-only pri">
                         <img src="" alt="" class="prefix">
-                        <p class="btn-text pri-text">Confirm</p>
+                        <p class="btn-text pri-text">建立用戶</p>
                     </div>
                     <div class="btn text-only outline sec">
                         <img src="" alt="" class="prefix">
-                        <p class="btn-text sec-text">Back</p>
+                        <p class="btn-text sec-text">返回</p>
                     </div>
                 </div>
             </form>
@@ -672,19 +670,32 @@
     <div class="overlay newpwConfirm">
         <div class="warn">
             <img class="icon" src="element/check-active.svg" alt="tick icon">
-            <h1 class="title">New password has been updated</h1>
-            <p class="desc">remember to use the new password when you login next time.</p>
+            <h1 class="title">密碼已經更新</h1>
+            <p class="desc">下次登入時請記得使用新密碼</p>
             <div class="btn-gp">
                 <a class="btn text-only pri" href="account.html">
                     <img src="" alt="" class="prefix">
-                    <p class="btn-text pri-text">Okay</p>
+                    <p class="btn-text pri-text">好的</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="overlay newUserConfirm">
+        <div class="warn">
+            <img class="icon" src="element/check-active.svg" alt="tick icon">
+            <h1 class="title">新用戶已成功創建</h1>
+            <p class="desc">稍後可以嘗試登入</p>
+            <div class="btn-gp">
+                <a class="btn text-only pri" href="#">
+                    <img src="" alt="" class="prefix">
+                    <p class="btn-text pri-text">好的</p>
                 </a>
             </div>
         </div>
     </div>
     <div class="changePassword">
         <div class="window">
-            <div class="title">New Password</div>
+            <div class="title">新密碼</div>
             <div class="subtitle"></div>
             <img src="element/close.svg" alt="" class="close">
             <form action="">
@@ -692,50 +703,50 @@
                     <!-- Current Password -->
                     <div class="input g-c-6 suffix">
                         <label for="cpw" class="label-container">
-                            <p>Enter your current password</p>
+                            <p>輸入目前的密碼</p>
                             <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
                         </label>
                         <div class="input-gp">
-                            <input type="password" class="placeholder" name="cpw" placeholder="Enter here"
+                            <input type="password" class="placeholder" name="cpw" placeholder="請輸入"
                                 required>
                             <img class="suffix hide" src="element/eye-off.svg" alt="eye icon">
                         </div>
-                        <div class="assistive-text active">Must include one upper and one lower case alphabet.</div>
+                        <div class="assistive-text">須包含一個大寫及一個數字元</div>
                     </div>
                     <!-- New Password -->
                     <div class="input g-c-6 suffix">
                         <label for="npw" class="label-container">
-                            <p>Enter your new password</p>
+                            <p>建立你的新密碼</p>
                             <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
                         </label>
                         <div class="input-gp">
-                            <input type="password" class="placeholder" name="npw" placeholder="Enter here"
+                            <input type="password" class="placeholder" name="npw" placeholder="請輸入"
                                 required>
                             <img class="suffix hide" src="element/eye-off.svg" alt="eye icon">
                         </div>
-                        <div class="assistive-text active">Must include one upper and one lower case alphabet.</div>
+                        <div class="assistive-text active">須包含一個大寫及一個數字元</div>
                     </div>
                     <!-- Confirm Password -->
                     <div class="input g-c-6 suffix">
                         <label for="cnpw" class="label-container">
-                            <p>Confirm your new password</p>
+                            <p>確認你的新密碼</p>
                             <img class="info" src="element/information-outline.svg" alt="gray outline information icon">
                         </label>
                         <div class="input-gp">
-                            <input type="password" class="placeholder" name="cnpw" placeholder="Enter here" required>
+                            <input type="password" class="placeholder" name="cnpw" placeholder="請輸入" required>
                             <img class="suffix hide" src="element/eye-off.svg" alt="eye icon">
                         </div>
-                        <div class="assistive-text active">Must include one upper and one lower case alphabet.</div>
+                        <div class="assistive-text active">須包含一個大寫及一個數字元</div>
                     </div>
                 </div>
                 <div class="btn-gp">
                     <div class="btn text-only pri">
                         <img src="" alt="" class="prefix">
-                        <p class="btn-text pri-text">Confirm</p>
+                        <p class="btn-text pri-text">確認</p>
                     </div>
                     <div class="btn text-only outline sec">
                         <img src="" alt="" class="prefix">
-                        <p class="btn-text sec-text">Back</p>
+                        <p class="btn-text sec-text">取消</p>
                     </div>
                 </div>
             </form>

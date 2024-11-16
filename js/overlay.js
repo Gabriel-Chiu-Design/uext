@@ -444,11 +444,11 @@ $(document).ready(function () {
         $(".st-2 .pri").click(function (e) { 
             e.preventDefault();
             $(".addUser").removeClass("active");
+            $(".newUserConfirm").addClass("active");
             $(".st-1").addClass("active");
             $(".st-2").removeClass("active");
             $(".addUser .subtitle").text("Fill in your profile information");
         });
-
     });
 
     // Show password
@@ -495,6 +495,11 @@ $(document).ready(function () {
     $(".newpwConfirm .pri").click(function (e) { 
         e.preventDefault();
         $(".newpwConfirm").removeClass("active");
+    });
+
+    $(".newUserConfirm .pri").click(function (e) { 
+        e.preventDefault();
+        $(".newUserConfirm").removeClass("active");
     });
 
 
